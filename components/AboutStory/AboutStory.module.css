@@ -1,0 +1,18 @@
+.wrap { display: grid; gap: 40px; grid-template-columns: 1fr; }
+@media (min-width: 900px) { .wrap { grid-template-columns: 5fr 7fr; gap: 80px; align-items: start; } }
+
+.kicker {
+  display: inline-block; font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--terracotta-600); margin-bottom: 22px;
+}
+
+.title { font-size: clamp(2.5rem, 5.6vw, 4.25rem); line-height: .98; letter-spacing: -.01em; color: var(--forest-950); }
+
+.body {
+  display: flex; flex-direction: column; gap: 28px;
+  font-size: 1.125rem; line-height: 1.85; color: var(--forest-700);
+}
+@media (min-width: 900px) { .body { padding-top: 10px; } }
+
+.body .lede { font-size: 1.3125rem; font-weight: 600; color: var(--forest-950); }
+.body p { margin: 0; max-width: 56ch; }

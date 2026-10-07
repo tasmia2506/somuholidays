@@ -1,0 +1,6 @@
+.head { max-width: 640px; margin-bottom: 40px; }
+.accent { color: var(--terracotta-500); }
+
+.routeBox { position: relative; min-height: 260px; }
+@media (min-width: 640px) { .routeBox { min-height: 320px; } }
+@media (min-width: 1024px) { .routeBox { min-height: 420px; } }

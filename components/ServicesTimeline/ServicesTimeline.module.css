@@ -1,0 +1,45 @@
+.band { position: relative; min-height: 80vh; padding-top: 80px; padding-bottom: 110px; }
+
+.timeline { position: relative; margin-top: 64px; display: grid; gap: 40px; }
+
+.trackBg, .trackFill {
+  position: absolute; top: 0; left: 39px; width: 2px; border-radius: 999px;
+}
+.trackBg { bottom: 0; background: rgba(255, 255, 255, .14); }
+.trackFill { background: var(--terracotta-500); box-shadow: 0 0 12px rgba(225, 6, 0, .6); }
+
+.row { position: relative; padding-left: 64px; }
+
+.dot {
+  position: absolute; left: 32px; top: 44px; width: 18px; height: 18px; border-radius: 999px;
+  background: var(--terracotta-500); box-shadow: 0 0 0 6px rgba(225, 6, 0, .22);
+}
+
+.card {
+  display: grid; grid-template-columns: 1fr; gap: 24px;
+  background: rgba(255, 255, 255, .04); border: 1px solid rgba(255, 255, 255, .1); border-radius: var(--radius);
+  padding: 28px;
+}
+@media (min-width: 640px) { .card { grid-template-columns: 220px 1fr; align-items: center; padding: 36px; } }
+
+.photo { position: relative; width: 100%; aspect-ratio: 4 / 3; border-radius: 18px; overflow: hidden; box-shadow: 0 20px 40px -18px rgba(0, 0, 0, .65); }
+@media (min-width: 640px) { .photo { aspect-ratio: 1 / 1; } }
+.photo img { object-fit: cover; }
+
+.cardBody { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+.num { font-family: var(--font-display); font-weight: 400; font-size: 1.625rem; color: var(--terracotta-300); }
+.cardBody h3 { margin: 6px 0 10px; font-size: 2rem; font-weight: 800; line-height: 1.15; color: var(--ivory); }
+.cardBody p { margin: 0 0 22px; font-size: 1.1875rem; line-height: 1.65; color: rgba(255, 255, 255, .72); max-width: 60ch; }
+
+.enquireBtn { padding: 13px 24px; font-size: 1rem; }
+
+.dotFinal { top: 50%; transform: translateY(-50%); }
+
+.finalCard {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 4px;
+  background: var(--terracotta-500); border-radius: var(--radius); padding: 32px 36px;
+}
+.finalCard h3 { margin: 0 0 8px; font-size: 1.75rem; font-weight: 800; line-height: 1.15; color: #fff; }
+.finalCard p { margin: 0 0 20px; font-size: 1.0625rem; color: rgba(255, 255, 255, .9); }
+.finalCard .enquireBtn { background: var(--forest-950); }
+.finalCard .enquireBtn:hover { background: #000; }

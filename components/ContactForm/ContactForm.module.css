@@ -1,0 +1,36 @@
+.wrap {
+  display: grid; grid-template-columns: 1fr; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
+}
+@media (min-width: 900px) { .wrap { grid-template-columns: .9fr 1fr 1fr; } }
+
+.mapCol { position: relative; min-height: 260px; background: var(--ivory-50); }
+.mapCol iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+.formCard { background: var(--forest-950); color: var(--ivory); padding: 40px 32px; }
+@media (min-width: 768px) { .formCard { padding: 48px 44px; } }
+.formCard h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.75rem; margin: 0 0 24px; color: var(--ivory); }
+.formCard form { display: grid; gap: 14px; }
+
+.row { display: grid; gap: 14px; grid-template-columns: 1fr; }
+@media (min-width: 480px) { .row { grid-template-columns: 1fr 1fr; } }
+
+.formCard input, .formCard textarea {
+  width: 100%; background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 12px; padding: 14px 16px; color: var(--ivory); font-size: .9375rem; font-family: inherit;
+  outline: none; resize: vertical; transition: border-color .2s var(--ease), background-color .2s var(--ease);
+}
+.formCard input::placeholder, .formCard textarea::placeholder { color: rgba(255, 255, 255, .45); }
+.formCard input:focus, .formCard textarea:focus { border-color: var(--terracotta-500); background: rgba(255, 255, 255, .1); }
+.formCard button { margin-top: 4px; width: 100%; justify-content: center; }
+
+.info { background: var(--ivory-50); padding: 40px 32px; display: flex; flex-direction: column; justify-content: center; }
+@media (min-width: 768px) { .info { padding: 48px 44px; } }
+.info .lead { margin: 16px 0 28px; max-width: none; }
+
+.divider { height: 1px; background: var(--line); margin-bottom: 28px; }
+.sub { font-size: 1.0625rem; font-weight: 800; margin: 0 0 16px; color: var(--forest-950); }
+
+.reasons { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: 1fr; }
+@media (min-width: 480px) { .reasons { grid-template-columns: 1fr 1fr; } }
+.reasons li { display: flex; align-items: flex-start; gap: 8px; font-size: .875rem; color: var(--forest-700); }
+.reasons svg { color: var(--terracotta-500); flex: none; margin-top: 3px; }

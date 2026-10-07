@@ -1,0 +1,54 @@
+.card {
+  position: relative; aspect-ratio: 5 / 6; border-radius: var(--radius); overflow: hidden;
+  background: var(--forest-800); color: var(--ivory);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+.card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+
+.img { object-fit: cover; z-index: 0; transition: transform .6s var(--ease); }
+.card:hover .img { transform: scale(1.05); }
+
+.card::after {
+  content: ""; position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, .05) 0%, rgba(0, 0, 0, .25) 32%, rgba(0, 0, 0, .68) 48%, rgba(0, 0, 0, .96) 100%);
+}
+
+.clickArea {
+  position: absolute; inset: 0; z-index: 2;
+  display: flex; flex-direction: column; justify-content: space-between;
+  padding: 14px 18px 60px;
+}
+
+.badges { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.tag {
+  background: rgba(10, 10, 10, .82); color: var(--ivory);
+  font-size: .625rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  padding: 6px 12px; border-radius: 999px;
+}
+.distance {
+  display: inline-flex; align-items: center; gap: 5px; color: var(--ivory);
+  font-size: .8125rem; font-weight: 600;
+}
+.distance svg { color: var(--terracotta-300); flex: none; }
+
+.text h3 { margin: 0 0 8px; font-size: 1.375rem; font-weight: 800; letter-spacing: -.01em; color: var(--ivory); }
+.tagline {
+  margin: 0; font-size: .875rem; color: rgba(255, 255, 255, .8); line-height: 1.5;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+.foot {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 3;
+  margin: 0 18px; padding: 14px 0 16px; border-top: 1px solid rgba(255, 255, 255, .2);
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}
+.time { display: inline-flex; align-items: center; gap: 6px; font-size: .8125rem; font-weight: 600; color: rgba(255, 255, 255, .85); }
+.time svg { color: rgba(255, 255, 255, .6); flex: none; }
+
+.enquire {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .75rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--terracotta-300);
+  background: none; border: none; padding: 0; font-family: inherit; cursor: pointer;
+}
+.enquire svg { transition: transform .2s var(--ease); }
+.card:hover .enquire svg { transform: translateX(3px); }

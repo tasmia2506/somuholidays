@@ -1,0 +1,32 @@
+.wrap {
+  display: grid; gap: 40px; grid-template-columns: 1fr; align-items: start; text-align: center; margin-bottom: 56px;
+}
+@media (min-width: 1024px) {
+  .wrap { grid-template-columns: 1fr auto 1fr; gap: 48px; align-items: center; text-align: left; }
+}
+
+.kicker { display: block; font-size: .8125rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--terracotta-600); margin-bottom: 16px; }
+.title { font-size: clamp(2rem, 3.8vw, 2.75rem); line-height: 1.1; letter-spacing: -.01em; color: var(--forest-950); }
+.sub { margin: 16px 0 0; font-size: 1.0625rem; line-height: 1.6; color: var(--forest-700); }
+
+.photoCol { position: relative; justify-self: center; width: 320px; }
+.photo { position: relative; width: 320px; height: 400px; border-radius: 200px 200px 28px 28px; overflow: hidden; box-shadow: var(--shadow); }
+.photo img { object-fit: cover; }
+
+.badge { position: absolute; bottom: -22px; right: -22px; width: 112px; height: 112px; }
+.badgeSpin { width: 100%; height: 100%; animation: spin 18s linear infinite; }
+.badgeSpin circle { fill: var(--ivory); filter: drop-shadow(0 6px 14px rgba(0, 0, 0, .18)); }
+.badgeSpin text { font-size: 7.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; fill: var(--forest-950); }
+@keyframes spin { to { transform: rotate(360deg); } }
+.badgeCenter {
+  position: absolute; inset: 0; margin: auto; width: 34px; height: 34px; border-radius: 999px;
+  display: grid; place-items: center; background: var(--terracotta-500); color: #fff;
+}
+
+.rightHead { margin: 0; font-size: 1.3125rem; font-weight: 800; line-height: 1.3; color: var(--forest-950); }
+.points { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; margin-top: 22px; }
+.points ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.points li { display: flex; align-items: flex-start; gap: 9px; font-size: .9375rem; line-height: 1.4; color: var(--forest-800); font-weight: 500; }
+.points svg { color: var(--terracotta-500); flex: none; margin-top: 3px; }
+
+@media (prefers-reduced-motion: reduce) { .badgeSpin { animation: none; } }

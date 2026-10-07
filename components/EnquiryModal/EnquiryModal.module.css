@@ -1,0 +1,39 @@
+.backdrop {
+  position: fixed; inset: 0; z-index: 200;
+  background: rgba(10, 10, 10, .72);
+  display: grid; place-items: center; padding: 20px;
+}
+
+.panel {
+  position: relative; width: min(440px, 100%); max-height: 90vh; overflow-y: auto;
+  background: var(--ivory); border-radius: var(--radius); padding: 32px 28px 28px;
+  box-shadow: var(--shadow);
+}
+
+.close {
+  position: absolute; top: 16px; right: 16px; width: 36px; height: 36px; border-radius: 999px;
+  border: 1px solid var(--line); background: transparent; display: grid; place-items: center;
+  cursor: pointer; color: var(--forest-800); transition: all .2s var(--ease);
+}
+.close:hover { background: var(--forest-800); color: var(--ivory); border-color: var(--forest-800); }
+
+.kicker {
+  display: inline-block; font-size: .6875rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--terracotta-600); margin-bottom: 10px;
+}
+.panel h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.6rem; margin: 0 0 8px; color: var(--forest-950); }
+.sub { font-size: .9rem; line-height: 1.5; color: var(--muted); margin: 0 0 22px; }
+
+.panel form { display: flex; flex-direction: column; gap: 16px; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: .75rem; font-weight: 600; color: var(--forest-700); }
+.field input, .field select {
+  padding: 11px 14px; border-radius: 10px; border: 1px solid var(--line);
+  font-size: .9rem; font-family: inherit; background: #fff; color: var(--forest-950);
+}
+.field input:focus, .field select:focus { outline: 2px solid var(--terracotta-500); outline-offset: 1px; }
+
+.panel button[type="submit"] { justify-content: center; margin-top: 4px; }
+
+@media (max-width: 480px) { .row { grid-template-columns: 1fr; } }

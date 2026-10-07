@@ -1,0 +1,63 @@
+.wrap {
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+}
+
+.canvas {
+  position: absolute; top: 16%; right: 4%;
+  width: min(58vw, 260px); aspect-ratio: 1 / 1;
+}
+@media (min-width: 640px) {
+  .canvas { top: 20%; right: 5%; width: min(48vw, 420px); aspect-ratio: 4 / 3; }
+}
+@media (min-width: 1024px) {
+  .canvas { top: 24%; right: 6%; width: min(42vw, 560px); }
+}
+
+.wrapFull { position: static; display: flex; justify-content: center; }
+.canvasFull {
+  position: static; width: min(100%, 980px); aspect-ratio: 16 / 7;
+}
+
+.svg { width: 100%; height: 100%; overflow: visible; }
+
+.hiddenPath { fill: none; stroke: none; opacity: 0; }
+
+.glow {
+  fill: none; stroke: var(--terracotta-500); stroke-width: 2.2; stroke-linecap: round;
+  opacity: .28;
+}
+
+.segment {
+  fill: none; stroke: var(--terracotta-500); stroke-width: .55; stroke-linecap: round;
+  stroke-dasharray: 2.4 2.1;
+}
+
+.marker { filter: drop-shadow(0 0 4px rgba(215, 25, 32, .85)); }
+.busBody { fill: var(--ivory); stroke: var(--terracotta-500); stroke-width: .35; }
+.busWindow { fill: var(--terracotta-500); opacity: .9; }
+.busWheel { fill: var(--forest-950); }
+
+.pinDot {
+  fill: var(--terracotta-500); stroke: var(--ivory); stroke-width: .4;
+}
+
+.pinRing {
+  fill: none; stroke: var(--terracotta-500); stroke-width: .5; opacity: .45;
+  animation: pulse 2.6s var(--ease) infinite;
+  transform-box: fill-box; transform-origin: center;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: .5; }
+  50% { transform: scale(1.35); opacity: .1; }
+}
+
+.label {
+  fill: var(--ivory); font-family: var(--font-sans); font-weight: 700; font-size: 3.6px;
+  letter-spacing: .04em; text-transform: uppercase;
+  paint-order: stroke; stroke: rgba(0, 0, 0, .55); stroke-width: 2.4px; stroke-linejoin: round;
+}
+.labelDark {
+  fill: var(--forest-950);
+  stroke: var(--ivory-50); stroke-width: 3px;
+}

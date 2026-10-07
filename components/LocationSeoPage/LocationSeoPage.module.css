@@ -1,0 +1,47 @@
+.serviceGrid { display: grid; gap: 20px; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .serviceGrid { grid-template-columns: 1fr 1fr; } }
+
+.serviceCard {
+  padding: 28px; border-radius: var(--radius); background: var(--ivory-50); border: 1px solid var(--line);
+}
+.serviceCard h2 { font-size: 1.1875rem; font-weight: 700; margin: 14px 0 8px; color: var(--forest-950); }
+.serviceCard p { margin: 0; color: var(--muted); line-height: 1.7; }
+
+.serviceIcon {
+  width: 40px; height: 40px; border-radius: 999px; display: grid; place-items: center;
+  background: rgba(225, 6, 0, .08); color: var(--terracotta-600);
+}
+
+.routeGrid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 36px; }
+
+.routeChip {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 18px; border-radius: 999px; background: var(--ivory); border: 1px solid var(--line);
+  font-size: .875rem; font-weight: 600; color: var(--forest-900); transition: all .2s var(--ease);
+}
+.routeChip:hover { background: var(--forest-800); border-color: var(--forest-800); color: var(--ivory); }
+.routeChip svg { width: 14px; height: 14px; }
+
+.routeChipStatic {
+  display: inline-flex; align-items: center;
+  padding: 10px 18px; border-radius: 999px; background: transparent; border: 1px dashed var(--line);
+  font-size: .875rem; font-weight: 500; color: var(--muted);
+}
+
+.whyWrap { display: grid; gap: 32px; grid-template-columns: 1fr; }
+@media (min-width: 768px) { .whyWrap { grid-template-columns: 5fr 7fr; align-items: center; } }
+
+.whyList { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+.whyList li {
+  display: flex; align-items: flex-start; gap: 12px; font-size: 1.0625rem; color: var(--forest-900);
+}
+.whyList svg { flex: none; margin-top: 3px; color: var(--terracotta-500); }
+
+.linksSection { padding-top: 0; }
+.linksRow {
+  display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center;
+  padding-top: 32px; border-top: 1px solid var(--line);
+  font-size: .875rem; color: var(--muted);
+}
+.linksRow a { font-weight: 600; color: var(--forest-900); }
+.linksRow a:hover { color: var(--terracotta-600); }

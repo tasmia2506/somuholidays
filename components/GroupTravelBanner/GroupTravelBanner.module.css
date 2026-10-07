@@ -1,0 +1,20 @@
+.band {
+  position: relative; padding: 56px 0; color: var(--ivory); overflow: hidden;
+  background: url("/21%20SEATER.jpeg") center / cover no-repeat, var(--forest-950);
+}
+@media (min-width: 640px) {
+  .band { padding: 96px 0; }
+}
+.band::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(11, 11, 11, .92) 0%, rgba(11, 11, 11, .55) 55%, rgba(11, 11, 11, .3) 100%);
+}
+.content { position: relative; max-width: 560px; }
+.content :global(.lead) { color: rgba(255, 255, 255, .78); }
+
+.points { display: flex; flex-direction: column; gap: 10px; margin: 20px 0 28px; padding: 0; list-style: none; }
+.points li {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: .9375rem; color: rgba(255, 255, 255, .88); line-height: 1.4;
+}
+.points li svg { flex: none; margin-top: 2px; color: var(--terracotta-300); }

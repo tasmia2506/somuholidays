@@ -1,0 +1,19 @@
+.band { padding: 64px 0; }
+
+.wrap { display: grid; gap: 40px; }
+@media (min-width: 1024px) { .wrap { grid-template-columns: 1.6fr 1fr; gap: 64px; } }
+
+.grid { margin-top: 28px; display: grid; gap: 24px; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 640px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+
+.feature { display: flex; flex-direction: column; gap: 8px; }
+.icon {
+  width: 46px; height: 46px; border-radius: 999px; display: grid; place-items: center; margin-bottom: 4px;
+  background: rgba(215, 25, 32, .16); color: var(--terracotta-300);
+}
+.feature strong { font-size: .9375rem; font-weight: 700; }
+.feature span { font-size: .8125rem; color: rgba(255, 255, 255, .68); }
+
+.right { display: flex; align-items: center; border-left: 1px solid rgba(255, 255, 255, .14); padding-left: 0; }
+@media (min-width: 1024px) { .right { padding-left: 40px; } }
+.right p { font-size: 1.0625rem; color: rgba(255, 255, 255, .78); margin: 0; }

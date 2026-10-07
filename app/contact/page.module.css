@@ -1,0 +1,48 @@
+.photoWrap {
+  position: relative; background-size: cover; background-position: center;
+}
+@media (min-width: 768px) {
+  .photoWrap { background-attachment: fixed; }
+}
+.photoWrap::before {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(10, 10, 10, .8) 0%, rgba(10, 10, 10, .45) 35%, rgba(10, 10, 10, .4) 100%);
+}
+.photoWrap > * { position: relative; z-index: 1; }
+
+.heroInner { padding: 170px 0 64px; color: var(--ivory); }
+.heroInner :global(.crumb) {
+  font-size: .8125rem; color: rgba(255, 255, 255, .7); margin-bottom: 20px;
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+}
+.heroInner :global(.crumb a:hover) { color: var(--ivory); }
+.heroInner :global(.crumb svg) { width: 14px; height: 14px; }
+.heroInner :global(.eyebrow) {
+  color: var(--ivory); background: rgba(255, 255, 255, .14); border-color: rgba(255, 255, 255, .32);
+}
+.heroInner h1 {
+  margin: 14px 0 14px; font-size: clamp(2.4rem, 5.6vw, 4rem);
+  background-image: linear-gradient(120deg, var(--terracotta-500) 0%, var(--terracotta-300) 30%, var(--ivory) 65%, var(--ivory) 100%);
+  background-clip: text; -webkit-background-clip: text; color: transparent; -webkit-text-fill-color: transparent;
+}
+.heroInner p { color: rgba(255, 255, 255, .85); max-width: 60ch; margin: 0; font-size: 1.0625rem; }
+
+.infoGrid { display: grid; gap: 20px; grid-template-columns: 1fr; margin: 56px 0; }
+@media (min-width: 768px) { .infoGrid { grid-template-columns: repeat(3, 1fr); } }
+
+.infoCard { background: var(--ivory); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 24px; }
+.infoIcon {
+  width: 44px; height: 44px; border-radius: 999px; background: var(--terracotta-500); color: #fff;
+  display: grid; place-items: center; margin-bottom: 16px;
+}
+.infoCard h3 { font-size: 1.0625rem; margin: 0 0 8px; }
+.infoCard p { margin: 0 0 10px; font-size: .875rem; color: var(--muted); }
+.infoCard a { font-weight: 600; color: var(--forest-900); text-decoration: none; }
+.infoCard a:hover { text-decoration: underline; }
+
+.socialRow { display: flex; flex-wrap: wrap; gap: 12px; }
+.socialRow :global(.btn) {
+  background: rgba(255, 255, 255, .92); backdrop-filter: blur(6px);
+  border-color: rgba(255, 255, 255, .6); color: var(--forest-950);
+}
+.socialRow :global(.btn:hover) { background: var(--ivory); }

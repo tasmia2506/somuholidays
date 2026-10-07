@@ -1,0 +1,31 @@
+.wrap { position: relative; z-index: 5; margin-top: -40px; }
+
+.card {
+  background: var(--ivory); border-radius: 20px; border: 1px solid var(--line);
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .45);
+  display: grid; grid-template-columns: 1fr; gap: 0;
+}
+@media (min-width: 900px) {
+  .card { grid-template-columns: 1.3fr 1fr 1fr .8fr auto; border-radius: 999px; align-items: center; padding: 8px; }
+}
+
+.field { display: flex; flex-direction: column; gap: 2px; padding: 14px 20px; border-bottom: 1px solid var(--line); }
+@media (min-width: 900px) {
+  .field { padding: 6px 20px; border-bottom: none; border-right: 1px solid var(--line); }
+  .field:last-of-type { border-right: none; }
+}
+
+.field label { font-size: .6875rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.field select, .field input {
+  border: 0; background: transparent; outline: none; padding: 2px 0; font-size: .9375rem;
+  width: 100%; min-width: 0; font-family: inherit; color: var(--forest-950);
+}
+
+.submit {
+  display: grid; place-items: center; width: 100%; height: 52px; margin: 14px 0 0; border: 0; cursor: pointer;
+  background: var(--terracotta-500); color: #fff; border-radius: 14px; transition: background-color .2s var(--ease);
+}
+.submit:hover { background: var(--terracotta-600); }
+@media (min-width: 900px) {
+  .submit { width: 52px; height: 52px; margin: 0 0 0 4px; border-radius: 999px; flex: none; }
+}

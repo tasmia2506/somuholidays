@@ -1,0 +1,29 @@
+.banner {
+  position: fixed; inset-inline: 0; bottom: 0; z-index: 500;
+  background: var(--forest-950); color: var(--ivory);
+  border-top: 1px solid rgba(255, 255, 255, .12);
+  padding: 18px 16px;
+  box-shadow: 0 -10px 30px -10px rgba(0, 0, 0, .4);
+}
+
+.inner {
+  max-width: 1200px; margin: 0 auto;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;
+}
+
+.inner p { margin: 0; font-size: .875rem; line-height: 1.5; color: rgba(255, 255, 255, .82); max-width: 640px; }
+.inner a { color: var(--ivory); text-decoration: underline; text-underline-offset: 2px; }
+
+.actions { display: flex; gap: 10px; flex: none; }
+
+.reject {
+  background: rgba(255, 255, 255, .08);
+  border-color: rgba(255, 255, 255, .6);
+  color: var(--ivory);
+}
+.reject:hover { background: rgba(255, 255, 255, .18); border-color: var(--ivory); }
+
+@media (max-width: 560px) {
+  .actions { width: 100%; }
+  .actions .btn { flex: 1; }
+}

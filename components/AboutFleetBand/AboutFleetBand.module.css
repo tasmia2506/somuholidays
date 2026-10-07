@@ -1,0 +1,19 @@
+.band { position: relative; background-size: cover; background-position: center; }
+.band::before {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(100deg, rgba(10, 10, 10, .94) 20%, rgba(10, 10, 10, .78) 55%, rgba(10, 10, 10, .55) 100%);
+}
+
+.wrap { position: relative; z-index: 1; display: grid; gap: 40px; grid-template-columns: 1fr; align-items: center; }
+@media (min-width: 900px) { .wrap { grid-template-columns: 1fr 1fr; gap: 56px; } }
+
+.copy .lead { margin: 16px 0 28px; }
+
+.grid { display: grid; gap: 20px; grid-template-columns: 1fr 1fr; }
+
+.item { display: flex; flex-direction: column; gap: 12px; }
+.item:first-child { margin-top: 40px; }
+.item span { font-size: .875rem; font-weight: 700; letter-spacing: .02em; }
+
+.photo { position: relative; width: 100%; aspect-ratio: 3 / 4; border-radius: var(--radius); overflow: hidden; }
+.photo img { object-fit: cover; }

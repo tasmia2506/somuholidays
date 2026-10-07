@@ -1,0 +1,16 @@
+.wrap { display: grid; gap: 40px; }
+@media (min-width: 1024px) { .wrap { grid-template-columns: 1fr 1.5fr; } }
+
+.item + .item { margin-top: 8px; }
+.summary {
+  width: 100%; text-align: left; background: none; border: 0; cursor: pointer; padding: 22px 0;
+  display: flex; justify-content: space-between; align-items: center; gap: 20px;
+  font-weight: 600; font-size: 1.0625rem; color: var(--forest-950);
+}
+.plus {
+  flex: none; width: 28px; height: 28px; border-radius: 999px; border: 1px solid var(--line);
+  display: grid; place-items: center; transition: transform .3s var(--ease), background-color .3s var(--ease);
+}
+.plusOpen { transform: rotate(45deg); background: var(--forest-800); color: var(--ivory); border-color: var(--forest-800); }
+.answer { overflow: hidden; }
+.answerInner { padding: 0 0 22px; color: var(--muted); max-width: 64ch; margin: 0; }
