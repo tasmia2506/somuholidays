@@ -55,6 +55,7 @@ export const metadata: Metadata = {
 
 export const viewport = {
   themeColor: "#090909",
+  colorScheme: "light",
 };
 
 const JSON_LD = {
@@ -82,7 +83,7 @@ const JSON_LD = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${bebasNeue.variable} ${lato.variable}`}>
+    <html lang="en" data-scroll-behavior="smooth" className={`${bebasNeue.variable} ${lato.variable}`}>
       <body>
         <script
           type="application/ld+json"

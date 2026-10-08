@@ -4,6 +4,8 @@
    Condensed display face (Bebas Neue) over Lato body text.
    ========================================================== */
 :root {
+  color-scheme: light;
+
   --forest-950: #0b0b0b;
   --forest-900: #121212;
   --forest-800: #1c1c1c;
