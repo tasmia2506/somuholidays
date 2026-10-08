@@ -1,5 +1,6 @@
 .hero {
-  position: relative; background-size: 115% auto; background-position: center bottom;
+  position: relative; background-color: var(--forest-950);
+  background-size: cover; background-position: center bottom; background-repeat: no-repeat;
   min-height: 100vh; display: flex; align-items: flex-end;
   padding: 150px 0 100px;
 }

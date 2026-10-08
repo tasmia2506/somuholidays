@@ -1,12 +1,18 @@
 .wrap {
-  display: grid; grid-template-columns: 1fr; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
+  display: grid; grid-template-columns: 1fr; gap: 24px;
 }
-@media (min-width: 900px) { .wrap { grid-template-columns: .9fr 1fr 1fr; } }
+@media (min-width: 900px) { .wrap { grid-template-columns: 1fr 1fr .9fr; align-items: stretch; } }
 
-.mapCol { position: relative; min-height: 260px; background: var(--ivory-50); }
+.mapCol {
+  position: relative; min-height: 260px; background: var(--ivory-50);
+  border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
+}
 .mapCol iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 
-.formCard { background: var(--forest-950); color: var(--ivory); padding: 40px 32px; }
+.formCard {
+  background: var(--forest-950); color: var(--ivory); padding: 40px 32px;
+  border-radius: var(--radius); box-shadow: var(--shadow);
+}
 @media (min-width: 768px) { .formCard { padding: 48px 44px; } }
 .formCard h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.75rem; margin: 0 0 24px; color: var(--ivory); }
 .formCard form { display: grid; gap: 14px; }
@@ -23,7 +29,10 @@
 .formCard input:focus, .formCard textarea:focus { border-color: var(--terracotta-500); background: rgba(255, 255, 255, .1); }
 .formCard button { margin-top: 4px; width: 100%; justify-content: center; }
 
-.info { background: var(--ivory-50); padding: 40px 32px; display: flex; flex-direction: column; justify-content: center; }
+.info {
+  background: var(--ivory-50); padding: 40px 32px; display: flex; flex-direction: column; justify-content: center;
+  border-radius: var(--radius); box-shadow: var(--shadow);
+}
 @media (min-width: 768px) { .info { padding: 48px 44px; } }
 .info .lead { margin: 16px 0 28px; max-width: none; }
 

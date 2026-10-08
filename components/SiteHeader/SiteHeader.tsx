@@ -85,6 +85,9 @@ export default function SiteHeader({ alwaysSolid = false }: { alwaysSolid?: bool
               <Icon name="phone" size={16} />
               {SITE.phonePrimary}
             </a>
+            <a className={styles.navPhoneIcon} href={`tel:${SITE.phonePrimaryTel}`} aria-label={`Call ${SITE.phonePrimary}`}>
+              <Icon name="phone" size={18} />
+            </a>
             <Link href="/contact#book" className={`btn btnPrimary ${styles.navCtaBtn}`}>
               Book a Vehicle <Icon name="arrow" size={16} />
             </Link>

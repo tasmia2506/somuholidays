@@ -10,7 +10,7 @@
   border: none; padding: 0; margin: 0; text-align: left; cursor: pointer; appearance: none;
 }
 .card img { object-fit: cover; transition: transform .8s var(--ease); }
-.card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, .88) 100%); }
+.card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, .68) 100%); }
 .card:hover img { transform: scale(1.06); }
 .info { position: relative; z-index: 1; padding: 22px; width: 100%; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; }
 .cat {

@@ -19,15 +19,20 @@
 .scrolledLight .navLinks a:hover { color: var(--forest-950); }
 .scrolledLight .navPhone { color: var(--forest-950); }
 .scrolledLight .menuToggle { color: var(--forest-950); border-color: rgba(0, 0, 0, .16); }
-.nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.brand { display: flex; align-items: center; gap: 10px; color: var(--ivory); }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--ivory); min-width: 0; }
 .brandMark {
-  width: 44px; height: 44px; border-radius: 50%; flex: none;
+  width: 40px; height: 40px; border-radius: 50%; flex: none;
   object-fit: cover; background: #fff;
 }
-.brandText { display: flex; flex-direction: column; line-height: 1; }
-.brandText strong { font-family: var(--font-display); font-weight: 400; font-size: 1.4rem; letter-spacing: .02em; }
-.brandText span { font-size: .625rem; letter-spacing: .28em; text-transform: uppercase; opacity: .7; margin-top: 4px; }
+@media (min-width: 480px) { .brandMark { width: 44px; height: 44px; } }
+.brandText { display: flex; flex-direction: column; line-height: 1; min-width: 0; }
+.brandText strong { font-family: var(--font-display); font-weight: 400; font-size: 1.1rem; letter-spacing: .02em; white-space: nowrap; }
+.brandText span { font-size: .5625rem; letter-spacing: .2em; text-transform: uppercase; opacity: .7; margin-top: 4px; white-space: nowrap; }
+@media (min-width: 480px) {
+  .brandText strong { font-size: 1.4rem; }
+  .brandText span { font-size: .625rem; letter-spacing: .28em; }
+}
 
 .navLinks { display: none; gap: 28px; list-style: none; margin: 0; padding: 0; }
 .navLinks a {
@@ -36,32 +41,45 @@
 }
 .navLinks a:hover { color: var(--ivory); }
 
-.navCta { display: flex; align-items: center; gap: 16px; }
+.navCta { display: flex; align-items: center; gap: 10px; flex: none; }
 .navPhone { display: none; align-items: center; gap: 8px; color: var(--ivory); font-weight: 600; font-size: .9rem; }
 .navPhone svg { color: var(--terracotta-300); }
 .navCtaBtn { display: none; padding: 10px 18px; }
 
+.navPhoneIcon {
+  width: 40px; height: 40px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, .25);
+  background: transparent; color: var(--ivory); display: grid; place-items: center; flex: none;
+}
+.scrolledLight .navPhoneIcon { color: var(--forest-950); border-color: rgba(0, 0, 0, .16); }
+
 .menuToggle {
-  width: 44px; height: 44px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, .25);
-  background: transparent; color: var(--ivory); display: grid; place-items: center; cursor: pointer;
+  width: 40px; height: 40px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, .25);
+  background: transparent; color: var(--ivory); display: grid; place-items: center; cursor: pointer; flex: none;
 }
 
+@media (min-width: 480px) { .navPhoneIcon, .menuToggle { width: 44px; height: 44px; } }
 @media (min-width: 640px) { .navCtaBtn { display: inline-flex; } }
 @media (min-width: 1100px) {
   .navLinks { display: flex; }
   .navPhone { display: inline-flex; }
+  .navPhoneIcon { display: none; }
   .menuToggle { display: none; }
 }
 
 /* Mobile drawer */
 .drawer {
   position: fixed; inset: 0; z-index: 60; background: var(--forest-950); color: var(--ivory);
-  padding: 20px; display: flex; flex-direction: column;
+  padding: 20px; display: flex; flex-direction: column; overflow-y: auto;
 }
-.drawerHead { display: flex; justify-content: space-between; align-items: center; }
-.drawer ul { list-style: none; padding: 0; margin: 40px 0 0; }
+.drawerHead { display: flex; justify-content: space-between; align-items: center; flex: none; }
+.drawer ul { list-style: none; padding: 0; margin: 16px 0 0; flex: none; }
 .drawer li a {
-  display: block; padding: 14px 0;
-  font-family: var(--font-display); font-weight: 400; font-size: 2rem; letter-spacing: .01em;
+  display: block; padding: 8px 0; line-height: 1.15;
+  font-family: var(--font-display); font-weight: 400; font-size: 1.625rem; letter-spacing: .01em;
 }
-.drawerFoot { margin-top: auto; display: grid; gap: 12px; }
+.drawerFoot { margin-top: 24px; padding-bottom: 8px; display: grid; gap: 12px; flex: none; }
+@media (min-height: 700px) {
+  .drawer ul { margin-top: 32px; }
+  .drawer li a { padding: 12px 0; font-size: 2rem; }
+  .drawerFoot { margin-top: auto; }
+}

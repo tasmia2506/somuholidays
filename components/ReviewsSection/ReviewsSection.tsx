@@ -82,22 +82,19 @@ export default function ReviewsSection() {
               and Facebook.
             </p>
           </Reveal>
-
-          <div className={styles.scrollerNav}>
-            <button className="iconBtn" aria-label="Previous reviews" onClick={scrollPrev}>
-              <Icon name="left" size={18} />
-            </button>
-            <button className="iconBtn" aria-label="Next reviews" onClick={scrollNext}>
-              <Icon name="right" size={18} />
-            </button>
-          </div>
         </div>
 
         <div className={styles.viewport} ref={emblaRef}>
           <div className={styles.emblaContainer}>
             {REVIEWS.map((r) => (
               <div className={styles.slide} key={r.author}>
-                <div className={styles.card}>
+                <a
+                  className={styles.card}
+                  href={SITE.social.googleReview}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Read ${r.author}'s review on Google`}
+                >
                   <div className={styles.stars} aria-label="5 out of 5 stars">
                     {Array.from({ length: 5 }).map((_, s) => (
                       <Icon key={s} name="star" size={15} />
@@ -123,10 +120,19 @@ export default function ReviewsSection() {
                       </div>
                     )}
                   </div>
-                </div>
+                </a>
               </div>
             ))}
           </div>
+        </div>
+
+        <div className={styles.scrollerNav}>
+          <button className="iconBtn" aria-label="Previous reviews" onClick={scrollPrev}>
+            <Icon name="left" size={18} />
+          </button>
+          <button className="iconBtn" aria-label="Next reviews" onClick={scrollNext}>
+            <Icon name="right" size={18} />
+          </button>
         </div>
 
         <Reveal className={styles.actions}>

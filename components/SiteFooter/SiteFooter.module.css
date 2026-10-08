@@ -1,8 +1,8 @@
 .footer { background: var(--forest-950); color: rgba(255, 255, 255, .72); padding: 80px 0 28px; }
 .grid { display: grid; gap: 40px; grid-template-columns: 1fr 1fr; }
 .about { grid-column: 1 / -1; }
-@media (min-width: 1024px) { .grid { grid-template-columns: 1.6fr repeat(5, 1fr); } .about { grid-column: auto; } }
-.about p { max-width: 40ch; margin: 18px 0 22px; font-size: .9375rem; }
+@media (min-width: 1024px) { .grid { grid-template-columns: 1.5fr 1fr 1fr 1fr; } .about { grid-column: auto; } }
+.about p { max-width: 42ch; margin: 18px 0 24px; font-size: .9375rem; }
 
 .brand { display: flex; align-items: center; gap: 10px; color: var(--ivory); }
 .brandMark {
@@ -13,26 +13,49 @@
 .brandText strong { font-family: var(--font-display); font-weight: 400; font-size: 1.4rem; letter-spacing: .02em; }
 .brandText span { font-size: .625rem; letter-spacing: .28em; text-transform: uppercase; opacity: .7; margin-top: 4px; }
 
-.contactList { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; font-size: .9375rem; }
+.ctaRow { display: flex; gap: 12px; flex-wrap: wrap; }
+.ctaBtn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 11px 20px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, .28);
+  color: var(--ivory); font-size: .875rem; font-weight: 600; letter-spacing: .01em;
+  transition: all .2s var(--ease);
+}
+.ctaBtn:hover { background: var(--terracotta-500); border-color: var(--terracotta-500); }
+
+.contactList { list-style: none; margin: 0 0 20px; padding: 0; display: grid; gap: 14px; font-size: .9375rem; }
 .contactList li { display: flex; gap: 10px; align-items: flex-start; }
-.contactList svg { flex: none; margin-top: 3px; color: var(--terracotta-300); }
+.contactList svg { flex: none; margin-top: 2px; color: var(--terracotta-300); }
 .contactList a:hover { color: var(--ivory); }
 
-.socialRow { display: flex; align-items: center; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+.socialRow { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .socialRow a { width: 38px; height: 38px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, .2); background: transparent; color: var(--ivory); display: grid; place-items: center; transition: all .2s var(--ease); }
 .socialRow a:hover { background: var(--terracotta-500); border-color: var(--terracotta-500); }
-.socialLinksText { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 12px; font-size: .8125rem; }
-.socialLinksText a:hover { color: var(--ivory); }
 
 .footer h4 { margin: 0 0 18px; color: var(--ivory); font-size: .8125rem; letter-spacing: .16em; text-transform: uppercase; }
 .links { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; font-size: .9375rem; }
 .links a:hover { color: var(--terracotta-300); }
 
 .bottom {
-  margin-top: 56px; padding-top: 24px;
-  display: flex; flex-wrap: wrap; gap: 14px 24px; justify-content: space-between; align-items: center; font-size: .8125rem;
+  margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, .1);
+  display: flex; flex-direction: column; gap: 20px; font-size: .8125rem;
 }
-.bottomNav { display: flex; gap: 20px; }
-.bottomNav a:hover { color: var(--ivory); }
-
+.bottomRow {
+  display: flex; flex-direction: column; gap: 16px; align-items: center; text-align: center;
+}
+@media (min-width: 900px) {
+  .bottomRow { flex-direction: row; justify-content: space-between; text-align: left; }
+}
+.bottomLeft { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; }
+@media (min-width: 900px) { .bottomLeft { justify-content: flex-start; } }
+.bottomCenter { text-align: center; white-space: nowrap; }
+.bottomRight { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px; }
+@media (min-width: 900px) { .bottomRight { justify-content: flex-end; } }
+.dot { opacity: .5; }
 .bottom a:hover { color: var(--ivory); }
+
+.toTop {
+  width: 40px; height: 40px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, .24);
+  display: grid; place-items: center; color: var(--ivory); flex: none; transition: all .2s var(--ease);
+}
+.toTop:hover { background: var(--terracotta-500); border-color: var(--terracotta-500); }
+.toTopIcon { transform: rotate(-90deg); }

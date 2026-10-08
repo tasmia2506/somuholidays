@@ -3,7 +3,7 @@
 .cta .lead { margin-inline: auto; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 32px; }
 
-.overlay { position: absolute; inset: 0; background: rgba(10, 10, 10, .82); }
+.overlay { position: absolute; inset: 0; background: rgba(10, 10, 10, .6); }
 
 .glow { position: absolute; width: 640px; height: 640px; border-radius: 999px; filter: blur(80px); opacity: .35; pointer-events: none; }
 .glowA { background: var(--forest-600); top: -320px; left: -200px; }

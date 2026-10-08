@@ -22,7 +22,7 @@
 }
 .dark::before {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(10, 10, 10, .78) 0%, rgba(10, 10, 10, .62) 45%, rgba(10, 10, 10, .92) 100%);
+  background: linear-gradient(180deg, rgba(10, 10, 10, .55) 0%, rgba(10, 10, 10, .4) 45%, rgba(10, 10, 10, .75) 100%);
 }
 .dark > * { position: relative; z-index: 1; }
 
@@ -36,7 +36,7 @@
 .light { background: var(--ivory); padding-bottom: 56px; }
 .photoRow { display: flex; justify-content: center; }
 
-.photoWrap { position: relative; width: min(640px, 92vw); margin-top: -40px; }
+.photoWrap { position: relative; width: min(640px, 100%); margin-top: -40px; }
 @media (min-width: 768px) { .photoWrap { margin-top: -60px; } }
 
 .photo { position: relative; width: 100%; aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }

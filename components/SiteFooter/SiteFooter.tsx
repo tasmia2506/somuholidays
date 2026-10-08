@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "@/components/Icon";
-import { SITE } from "@/lib/site";
+import { SITE, waLink } from "@/lib/site";
 import styles from "./SiteFooter.module.css";
 
 export default function SiteFooter() {
@@ -20,24 +20,61 @@ export default function SiteFooter() {
               </span>
             </Link>
             <p>
-              Chauffeur-driven Innova, Innova Crysta, Swift and Etios cabs, plus 21 &amp; 25-seater bus rentals — for
+              Chauffeur-driven Innova, Innova Crysta, Swift and Etios cabs, plus 21 &amp; 25-seater bus rentals for
               domestic tours, corporate &amp; MICE travel, theme-based trips and airport transport across Bengaluru.
             </p>
+            <div className={styles.ctaRow}>
+              <a href={`tel:${SITE.phonePrimaryTel}`} className={styles.ctaBtn}>
+                <Icon name="phone" size={16} />
+                Call Us
+              </a>
+              <a href={waLink()} target="_blank" rel="noopener noreferrer" className={styles.ctaBtn}>
+                <Icon name="whatsapp" size={16} />
+                WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4>Navigation</h4>
+            <ul className={styles.links}>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/about">About Us</Link></li>
+              <li><Link href="/fleet">Our Fleet</Link></li>
+              <li><Link href="/services">Services</Link></li>
+              <li><Link href="/destinations">Destinations</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Core Services</h4>
+            <ul className={styles.links}>
+              <li><Link href="/contact#book">Cab &amp; Airport Transport</Link></li>
+              <li><Link href="/destinations">Domestic Tours</Link></li>
+              <li><Link href="/services">Customised Itineraries</Link></li>
+              <li><Link href="/services">Corporate &amp; MICE Travel</Link></li>
+              <li><Link href="/services">Theme-Based Tours</Link></li>
+              <li><Link href="/taxi-service-bangalore">Bangalore Taxi Service</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Contact Desk</h4>
             <ul className={styles.contactList}>
               <li>
-                <Icon name="phone" />
+                <Icon name="pin" size={18} />
+                <span>{SITE.address}</span>
+              </li>
+              <li>
+                <Icon name="phone" size={18} />
                 <span>
-                  <a href={`tel:${SITE.phonePrimaryTel}`}>{SITE.phonePrimary}</a> /{" "}
-                  <a href={`tel:${SITE.phoneSecondaryTel}`}>{SITE.phoneSecondary}</a>
+                  <a href={`tel:${SITE.phonePrimaryTel}`}>{SITE.phonePrimary}</a>
                 </span>
               </li>
               <li>
-                <Icon name="mail" />
-                <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
-              </li>
-              <li>
-                <Icon name="pin" />
-                <span>{SITE.address}</span>
+                <Icon name="clock" size={18} />
+                <span>24 Hours · 7 Days a Week</span>
               </li>
             </ul>
             <div className={styles.socialRow}>
@@ -51,86 +88,29 @@ export default function SiteFooter() {
                 <Icon name="pin" size={16} />
               </a>
             </div>
-            <div className={styles.socialLinksText}>
-              <a href={SITE.social.justdial} target="_blank" rel="noopener noreferrer">JustDial</a>
-              <a href={SITE.social.googleReview} target="_blank" rel="noopener noreferrer">Google</a>
-              <a href={SITE.social.threads} target="_blank" rel="noopener noreferrer">Threads</a>
-            </div>
-          </div>
-
-          <div>
-            <h4>Fleet</h4>
-            <ul className={styles.links}>
-              <li><Link href="/fleet">Swift &amp; Etios</Link></li>
-              <li><Link href="/fleet">Innova</Link></li>
-              <li><Link href="/fleet">Innova Crysta</Link></li>
-              <li><Link href="/fleet">21 Seater Bus</Link></li>
-              <li><Link href="/fleet">25 Seater Bus</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>Services</h4>
-            <ul className={styles.links}>
-              <li><Link href="/services">Customised Itineraries</Link></li>
-              <li><Link href="/destinations">Domestic Tours</Link></li>
-              <li><Link href="/services">Corporate &amp; MICE Travel</Link></li>
-              <li><Link href="/services">Theme-Based Tours</Link></li>
-              <li><Link href="/contact#book">Cab &amp; Airport Transport</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>Locations</h4>
-            <ul className={styles.links}>
-              <li><Link href="/taxi-service-bangalore">Bangalore Taxi Service</Link></li>
-              <li><Link href="/contact#book">Rajajinagar</Link></li>
-              <li><Link href="/contact#book">Whitefield</Link></li>
-              <li><Link href="/contact#book">Koramangala</Link></li>
-              <li><Link href="/contact#book">Indiranagar</Link></li>
-              <li>
-                <a href={SITE.social.googleMaps} target="_blank" rel="noopener noreferrer">
-                  View on Google Maps
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>Popular Routes</h4>
-            <ul className={styles.links}>
-              <li><Link href="/bangalore-to-mysore-cab">Bangalore to Mysore Cab</Link></li>
-              <li><Link href="/bangalore-to-coorg-cab">Bangalore to Coorg Cab</Link></li>
-              <li><Link href="/bangalore-to-hassan-cab">Bangalore to Hassan Cab</Link></li>
-              <li><Link href="/bangalore-to-chikkamagaluru-cab">Bangalore to Chikkamagaluru Cab</Link></li>
-              <li><Link href="/bangalore-to-hampi-cab">Bangalore to Hampi Cab</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>Company</h4>
-            <ul className={styles.links}>
-              <li><Link href="/about">About Us</Link></li>
-              <li><Link href="/destinations">Destinations</Link></li>
-              <li><Link href="/#faq">FAQ</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
-            </ul>
           </div>
         </div>
 
         <div className={styles.bottom}>
-          <span>© {year} Somu Holidays Tours and Travels. All rights reserved.</span>
-          <nav className={styles.bottomNav}>
-            <Link href="/privacy">Privacy Policy</Link>
-            <Link href="/terms">Terms of Service</Link>
-          </nav>
-          <span>Rajajinagar, Bengaluru · Available 24 × 7</span>
-          <span>
-            Designed and developed by{" "}
+          <div className={styles.bottomRow}>
+            <div className={styles.bottomLeft}>
+              <span>© {year} Somu Holidays Tours &amp; Travels. All rights reserved.</span>
+              <span className={styles.dot}>·</span>
+              <Link href="/privacy">Privacy Policy</Link>
+            </div>
+            <div className={styles.bottomRight}>
+              <span>Rajajinagar, Bengaluru · Available 24 × 7</span>
+              <a href="#top" className={styles.toTop} aria-label="Back to top">
+                <Icon name="arrow" size={16} className={styles.toTopIcon} />
+              </a>
+            </div>
+          </div>
+          <div className={styles.bottomCenter}>
+            Designed &amp; Developed by{" "}
             <a href="https://naazailabs.com" target="_blank" rel="noopener noreferrer">
-              Naazailabs
+              <strong>Naazailabs</strong>
             </a>
-          </span>
+          </div>
         </div>
       </div>
     </footer>

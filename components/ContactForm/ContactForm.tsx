@@ -34,31 +34,7 @@ export default function ContactForm() {
     <section className="section" id="book">
       <div className="container">
         <div className={styles.wrap}>
-          <Reveal className={styles.mapCol}>
-            <iframe
-              title="Somu Holidays location"
-              src={`https://www.google.com/maps?q=${encodeURIComponent(SITE.address)}&output=embed`}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </Reveal>
-
-          <Reveal className={styles.formCard} delay={0.05}>
-            <h3>Send Us A Message</h3>
-            <form onSubmit={handleSubmit}>
-              <div className={styles.row}>
-                <input name="name" placeholder="Name" required />
-                <input name="email" type="email" placeholder="Email" required />
-              </div>
-              <input name="subject" placeholder="Subject" />
-              <textarea name="message" placeholder="Message" rows={5} required />
-              <button className="btn btnPrimary" type="submit">
-                Send Now <Icon name="arrow" size={16} />
-              </button>
-            </form>
-          </Reveal>
-
-          <Reveal className={styles.info} delay={0.1} style={{ height: "100%" }}>
+          <Reveal className={styles.info} style={{ height: "100%" }}>
             <span className="eyebrow">Contact Us</span>
             <h2 className="display h2">
               Get In Touch With <span className="accent">Somu Holidays</span>
@@ -77,6 +53,30 @@ export default function ContactForm() {
                 </li>
               ))}
             </ul>
+          </Reveal>
+
+          <Reveal className={styles.formCard} delay={0.05}>
+            <h3>Send Us A Message</h3>
+            <form onSubmit={handleSubmit}>
+              <div className={styles.row}>
+                <input name="name" placeholder="Name" required />
+                <input name="email" type="email" placeholder="Email" required />
+              </div>
+              <input name="subject" placeholder="Subject" />
+              <textarea name="message" placeholder="Message" rows={5} required />
+              <button className="btn btnPrimary" type="submit">
+                Send Now <Icon name="arrow" size={16} />
+              </button>
+            </form>
+          </Reveal>
+
+          <Reveal className={styles.mapCol} delay={0.1}>
+            <iframe
+              title="Somu Holidays location"
+              src={`https://www.google.com/maps?q=${encodeURIComponent(SITE.address)}&output=embed`}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </Reveal>
         </div>
       </div>
