@@ -22,7 +22,13 @@ export default function DestinationsIntro() {
 
         <Reveal className={styles.photoCol} delay={0.1}>
           <div className={styles.photo}>
-            <Image src="/heritaage background image.jpeg" alt="Karnataka heritage site" fill sizes="320px" />
+            <Image
+              src="/heritaage background image.jpeg"
+              alt="Karnataka heritage site"
+              fill
+              sizes="320px"
+              priority
+            />
           </div>
           <div className={styles.badge} aria-hidden="true">
             <svg viewBox="0 0 140 140" className={styles.badgeSpin}>
