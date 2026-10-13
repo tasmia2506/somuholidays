@@ -4,7 +4,7 @@
 export const SITE = {
   // Placeholder — replace with the live domain before launch. Every canonical URL,
   // the sitemap and the JSON-LD business schema are derived from this one value.
-  url: "https://www.somuholidays.example",
+  url: "https://www.somuholidays.com",
   name: "Somu Holidays Tours and Travels",
   shortName: "Somu Holidays",
   tagline: "Luxury Innova Crysta, cab & bus rentals, planned end to end.",
@@ -21,12 +21,8 @@ export const SITE = {
     instagram: "https://www.instagram.com/somuholidays04/",
     facebook: "https://www.facebook.com/share/1EkqNvrcoyf/",
     threads: "https://www.threads.com/@somuholidays04",
-    // Built from the business name + address (no verified Place ID on file yet) —
-    // replace with the real Google Business Profile share links once available.
-    googleMaps:
-      "https://www.google.com/maps/search/?api=1&query=Somu+Holidays+Tours+and+Travels%2C+%231406%2C+5th+Main+Rd%2C+D-Block%2C+2nd+Stage%2C+Rajajinagar%2C+Bengaluru%2C+Karnataka+560010",
-    googleReview:
-      "https://www.google.com/maps/search/?api=1&query=Somu+Holidays+Tours+and+Travels%2C+%231406%2C+5th+Main+Rd%2C+D-Block%2C+2nd+Stage%2C+Rajajinagar%2C+Bengaluru%2C+Karnataka+560010",
+    googleMaps: "https://share.google/0Re1eKHBjc78csU0U",
+    googleReview: "https://share.google/0Re1eKHBjc78csU0U",
     justdial: "https://jsdl.in/DT-152VOP1KURV",
   },
 } as const;

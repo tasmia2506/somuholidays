@@ -23,8 +23,19 @@ export default function TopDestinations() {
       <div className={`container ${styles.row}`}>
         {items.map((d, i) => (
           <Reveal key={d.slug} delay={i * 0.08} className={`${styles.item} ${i % 2 === 1 ? styles.down : ""}`}>
-            <Link href={`/destinations/${d.slug}`} className={styles.card}>
-              <Image src={unsplash(d.heroImg, 500)} alt={d.name} fill sizes="(min-width: 1024px) 23vw, 45vw" />
+            <Link
+              href={`/destinations/${d.slug}`}
+              className={styles.card}
+              title={`${d.name} Tour Package & Cab Booking from Bangalore`}
+              aria-label={`Explore ${d.name} tour package and itinerary`}
+            >
+              <Image
+                src={unsplash(d.heroImg, 500)}
+                alt={`${d.name} holiday tour package and outstation cab destination from Bangalore`}
+                title={`${d.name} Tour Package - Somu Holidays`}
+                fill
+                sizes="(min-width: 1024px) 23vw, 45vw"
+              />
               <span className={styles.name}>{d.name}</span>
             </Link>
           </Reveal>

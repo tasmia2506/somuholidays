@@ -1,0 +1,102 @@
+{
+  "domain": "https://www.somuholidays.com",
+  "outputDir": "public",
+  "authorityTerms": [
+    "Karnataka State Transport Department",
+    "RTO",
+    "AIS-052",
+    "All India Tourist Permit",
+    "Fastag",
+    "Somu Holidays",
+    "Rajajinagar",
+    "commercial passenger",
+    "verified chauffeur",
+    "speed governor",
+    "licensed",
+    "insured",
+    "₹37",
+    "per kilometre"
+  ],
+  "dynamicRoutes": [
+    "/destinations/mysuru",
+    "/destinations/coorg",
+    "/destinations/chikmagalur",
+    "/destinations/hampi",
+    "/destinations/gokarna",
+    "/destinations/goa",
+    "/destinations/alleppey",
+    "/destinations/madurai",
+    "/destinations/kumarakom",
+    "/destinations/agra",
+    "/destinations/jaipur",
+    "/destinations/manali",
+    "/destinations/ooty",
+    "/bangalore-to-mysore-cab",
+    "/bangalore-to-coorg-cab",
+    "/bangalore-to-hassan-cab",
+    "/bangalore-to-chikkamagaluru-cab",
+    "/bangalore-to-hampi-cab",
+    "/bangalore-to-gokarna-cab",
+    "/bangalore-to-udupi-cab",
+    "/bangalore-to-dharmasthala-cab",
+    "/blog/21-seater-bus-rental-bangalore-guide",
+    "/blog/top-weekend-getaways-from-bangalore-by-cab",
+    "/blog/innova-crysta-vs-bus-rental-bangalore-comparison"
+  ],
+  "pageImages": {
+    "/21-seater-bus-rental-bangalore": [
+      {
+        "src": "/21 SEATER.jpeg",
+        "alt": "21 Seater Luxury AC Bus Rental in Bangalore with Pushback Seats - Somu Holidays"
+      },
+      {
+        "src": "/25 seater bus2.jpeg",
+        "alt": "25 Seater and 21 Seater Tourist Bus Fleet in Bangalore - Somu Holidays"
+      }
+    ],
+    "/fleet": [
+      {
+        "src": "/21 SEATER.jpeg",
+        "alt": "21 Seater Bus on Rent Bangalore"
+      },
+      {
+        "src": "/crysta hill.jpg",
+        "alt": "Toyota Innova Crysta Cab Rental Bangalore"
+      },
+      {
+        "src": "/SWIFT.jpeg",
+        "alt": "Maruti Swift Sedan Cab Bangalore"
+      },
+      {
+        "src": "/toyota etios.jpeg",
+        "alt": "Toyota Etios Taxi Bangalore"
+      },
+      {
+        "src": "/INNOVA.jpeg",
+        "alt": "Toyota Innova 7 Seater SUV Bangalore"
+      },
+      {
+        "src": "/25 seater bus2.jpeg",
+        "alt": "25 Seater Luxury Tourist Bus Bangalore"
+      }
+    ],
+    "/blog/21-seater-bus-rental-bangalore-guide": [
+      {
+        "src": "/21 SEATER.jpeg",
+        "alt": "21 Seater Bus Rental Rates and Specifications Guide Bangalore"
+      }
+    ],
+    "/blog/innova-crysta-vs-bus-rental-bangalore-comparison": [
+      {
+        "src": "/CRYSTA OUTSIDE.jpeg",
+        "alt": "Toyota Innova Crysta compared to Tourist Bus Rental in Bangalore"
+      }
+    ],
+    "/blog/top-weekend-getaways-from-bangalore-by-cab": [
+      {
+        "src": "/crysta hill.jpg",
+        "alt": "Weekend Road Trip Outstation Cab Hire from Bangalore"
+      }
+    ]
+  }
+}

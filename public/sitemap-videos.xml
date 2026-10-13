@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://www.somuholidays.com</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.somuholidays.com/crysta%20hill.jpg</video:thumbnail_loc>
+      <video:title>Somu Holidays Luxury Travel and Fleet in Bengaluru</video:title>
+      <video:description>Somu Holidays Luxury Travel and Fleet in Bengaluru</video:description>
+      <video:content_loc>https://www.somuholidays.com/landing-page-hero.mp4</video:content_loc>
+      <video:publication_date>2026-10-13</video:publication_date>
+    </video:video>
+  </url>
+</urlset>

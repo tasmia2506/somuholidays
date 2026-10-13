@@ -59,11 +59,11 @@ export default function ContactForm() {
             <h3>Send Us A Message</h3>
             <form onSubmit={handleSubmit}>
               <div className={styles.row}>
-                <input name="name" placeholder="Name" required />
-                <input name="email" type="email" placeholder="Email" required />
+                <input name="name" placeholder="Name" aria-label="Your Name" required />
+                <input name="email" type="email" placeholder="Email" aria-label="Your Email" required />
               </div>
-              <input name="subject" placeholder="Subject" />
-              <textarea name="message" placeholder="Message" rows={5} required />
+              <input name="subject" placeholder="Subject" aria-label="Subject" />
+              <textarea name="message" placeholder="Message" aria-label="Your Message" rows={5} required />
               <button className="btn btnPrimary" type="submit">
                 Send Now <Icon name="arrow" size={16} />
               </button>

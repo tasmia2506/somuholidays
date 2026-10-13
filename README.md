@@ -39,7 +39,7 @@ npm run dev       # http://localhost:3000
 npm run build && npm run start   # production build
 ```
 
-## Known placeholders
+## Domain & business data
 
-- Destination package itineraries/pricing in `lib/destinations.ts` are illustrative — the business only supplied fleet rental rates, not package pricing.
-- `metadataBase` in `app/layout.tsx` points at a placeholder domain; update it once the site has a real one.
+- Live domain: `https://www.somuholidays.com` (configured in `lib/site.ts`).
+- Destination package itineraries/pricing in `lib/destinations.ts` are illustrative — the business supplied fleet rental rates, not package pricing.

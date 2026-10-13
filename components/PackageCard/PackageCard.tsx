@@ -12,16 +12,25 @@ export default function PackageCard({ destination }: { destination: DestinationP
   const distance = hasDistance ? metaParts[0] : undefined;
   const duration = hasDistance ? metaParts[1] : metaParts[0];
 
+  const imgAlt = `${destination.name} holiday tour package and cab destination from Bangalore`;
+  const imgTitle = `${destination.name} (${destination.category}) - Somu Holidays Bangalore`;
+
   return (
     <div className={styles.card}>
       <Image
         src={unsplash(destination.heroImg)}
-        alt={destination.name}
+        alt={imgAlt}
+        title={imgTitle}
         fill
         sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
         className={styles.img}
       />
-      <Link href={`/destinations/${destination.slug}`} className={styles.clickArea} aria-label={`View ${destination.name} details`}>
+      <Link
+        href={`/destinations/${destination.slug}`}
+        className={styles.clickArea}
+        title={`View full itinerary and rates for ${destination.name}`}
+        aria-label={`View ${destination.name} package details and itinerary`}
+      >
         <div className={styles.badges}>
           <span className={styles.tag}>{destination.category}</span>
           {distance && (

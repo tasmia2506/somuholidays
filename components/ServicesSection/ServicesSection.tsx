@@ -91,18 +91,27 @@ export default function ServicesSection({ limit }: { limit?: number }) {
             <Reveal key={service.title} delay={(i % 3) * 0.07}>
               <article className={styles.card}>
                 <div className={styles.media}>
-                  <Image
-                    src={service.img.startsWith("/") ? service.img : unsplash(service.img, 700)}
-                    alt={service.title}
-                    fill
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  />
+                  <Link
+                    href="/services"
+                    title={`Explore ${service.title} details`}
+                    aria-label={`Explore ${service.title} details`}
+                    style={{ display: "contents" }}
+                  >
+                    <Image
+                      src={service.img.startsWith("/") ? service.img : unsplash(service.img, 700)}
+                      alt={`${service.title} - Somu Holidays Bangalore transportation service`}
+                      title={`${service.title} - Somu Holidays`}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    />
+                  </Link>
                 </div>
                 <div className={styles.avatarWrap}>
                   <div className={styles.avatar}>
                     <Image
                       src={service.img.startsWith("/") ? service.img : unsplash(service.img, 300)}
-                      alt=""
+                      alt={`${service.title} badge`}
+                      title={service.title}
                       fill
                       sizes="92px"
                     />

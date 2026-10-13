@@ -132,6 +132,7 @@ export default function RouteSeoPage({ route }: { route: RouteSeo }) {
         <section className={`section ${styles.linksSection}`}>
           <div className={`container ${styles.linksRow}`}>
             <span>Explore more:</span>
+            <Link href="/21-seater-bus-rental-bangalore" title="21 Seater Bus Rental Bangalore">21 Seater Bus Rental</Link>
             <Link href="/taxi-service-bangalore">{route.origin} Taxi Service</Link>
             {route.destinationSlug && <Link href={`/destinations/${route.destinationSlug}`}>{route.destination} Package</Link>}
             <Link href="/fleet">Our Fleet</Link>

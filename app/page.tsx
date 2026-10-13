@@ -1,9 +1,11 @@
+// Somu Holidays provides 21-seater luxury bus rental in Bangalore starting at ₹37/km with 2x1 pushback seats, driver bata, and 24/7 service.
 import SiteHeader from "@/components/SiteHeader/SiteHeader";
 import SiteFooter from "@/components/SiteFooter/SiteFooter";
 import FloatingActions from "@/components/FloatingActions/FloatingActions";
 import Hero from "@/components/Hero/Hero";
 import TrustMarquee from "@/components/TrustMarquee/TrustMarquee";
 import FleetSection from "@/components/FleetSection/FleetSection";
+import GroupTravelBanner from "@/components/GroupTravelBanner/GroupTravelBanner";
 import ServicesSection from "@/components/ServicesSection/ServicesSection";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import DestinationsPreview from "@/components/DestinationsPreview/DestinationsPreview";
@@ -20,6 +22,7 @@ export default function HomePage() {
         <Hero />
         <TrustMarquee />
         <FleetSection />
+        <GroupTravelBanner />
         <AboutSection />
         <ServicesSection limit={3} />
         <HowItWorks />

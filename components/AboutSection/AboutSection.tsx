@@ -23,7 +23,20 @@ export default function AboutSection({ showStoryLink = true }: { showStoryLink?:
       <div className={`container ${styles.wrap}`}>
         <Reveal className={styles.photoCol}>
           <div className={styles.photo}>
-            <Image src="/CRYSTA OUTSIDE.jpeg" alt="Somu Holidays fleet, Bengaluru" fill sizes="(min-width: 1024px) 46vw, 92vw" />
+            <Link
+              href="/about"
+              title="Learn more about Somu Holidays Tours & Travels Bengaluru"
+              aria-label="Learn more about Somu Holidays Tours & Travels Bengaluru"
+              style={{ display: "contents" }}
+            >
+              <Image
+                src="/CRYSTA OUTSIDE.jpeg"
+                alt="Somu Holidays Innova Crysta and tour fleet in Rajajinagar, Bengaluru"
+                title="Somu Holidays Luxury Travel Fleet - Rajajinagar, Bengaluru"
+                fill
+                sizes="(min-width: 1024px) 46vw, 92vw"
+              />
+            </Link>
             <div className={styles.photoCaption}>
               <span>Rajajinagar, Bengaluru</span>
               <span>Available 24 × 7</span>

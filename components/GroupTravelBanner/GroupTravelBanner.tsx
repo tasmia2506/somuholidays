@@ -33,9 +33,22 @@ export default function GroupTravelBanner() {
               </li>
             ))}
           </ul>
-          <Link href="/contact#book" className="btn btnPrimary">
-            Book a Bus <Icon name="arrow" size={18} />
-          </Link>
+          <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "24px" }}>
+            <Link
+              href="/21-seater-bus-rental-bangalore"
+              className="btn btnPrimary"
+              title="21 Seater Bus Rental Rates & Specifications"
+            >
+              21-Seater Bus Rates <Icon name="arrow" size={18} />
+            </Link>
+            <Link
+              href="/contact#book"
+              className="btn btnGhost"
+              title="Book a Bus with Somu Holidays"
+            >
+              Book a Bus
+            </Link>
+          </div>
         </Reveal>
       </div>
     </section>

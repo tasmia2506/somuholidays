@@ -10,7 +10,7 @@ import Reveal from "@/components/Reveal";
 import PackageCard from "@/components/PackageCard/PackageCard";
 import EnquiryModal from "@/components/EnquiryModal/EnquiryModal";
 import { getAllSlugs, getDestinationBySlug, getRelated } from "@/lib/destinations";
-import { unsplash, waLink } from "@/lib/site";
+import { SITE, unsplash, waLink } from "@/lib/site";
 import styles from "./page.module.css";
 
 type PageParams = Promise<{ slug: string }>;
@@ -44,10 +44,48 @@ export default async function PackagePage({ params }: { params: PageParams }) {
   const priceSuffix = destination.priceType === "person" ? " / person" : " / day";
   const waMessage = `Hi Somu Holidays, I'd like to book the ${destination.name} package (${destination.duration}). Please share availability and the next steps.`;
 
+  const schemaJson = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TouristTrip",
+        "@id": `${SITE.url}/destinations/${destination.slug}#trip`,
+        name: `${destination.name} Holiday Package`,
+        description: destination.tagline,
+        touristType: destination.category,
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "INR",
+          price: destination.price,
+          availability: "https://schema.org/InStock",
+          url: `${SITE.url}/destinations/${destination.slug}`,
+          seller: { "@type": "TravelAgency", name: SITE.name, telephone: SITE.phonePrimaryTel },
+        },
+        itinerary: destination.itinerary.map((step) => ({
+          "@type": "Day",
+          name: step.title,
+          description: step.desc,
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: SITE.url },
+          { "@type": "ListItem", position: 2, name: "Destinations", item: `${SITE.url}/destinations` },
+          { "@type": "ListItem", position: 3, name: destination.name, item: `${SITE.url}/destinations/${destination.slug}` },
+        ],
+      },
+    ],
+  };
+
   return (
     <>
       <SiteHeader alwaysSolid />
       <main>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaJson).replace(/</g, "\\u003c") }}
+        />
         <section
           className="pageBanner pageBannerPhoto"
           style={{ backgroundImage: `url('${unsplash(destination.heroImg, 1600)}')` }}
@@ -71,17 +109,31 @@ export default async function PackagePage({ params }: { params: PageParams }) {
         <section className="section" style={{ paddingTop: 64 }}>
           <div className="container">
             <div className={styles.gallery}>
-              {destination.gallery.map((img, i) => (
-                <div className={`${styles.galleryImg} ${i === 0 ? styles.galleryFirst : ""}`} key={img + i}>
-                  <Image
-                    src={unsplash(img)}
-                    alt={destination.name}
-                    fill
-                    sizes={i === 0 ? "100vw" : "(min-width: 640px) 33vw, 50vw"}
-                    priority={i === 0}
-                  />
-                </div>
-              ))}
+              {destination.gallery.map((img, i) => {
+                const imgUrl = unsplash(img);
+                const imgAlt = `${destination.name} holiday tour highlight ${i + 1} - scenic attractions from Bangalore`;
+                const imgTitle = `${destination.name} Sightseeing View ${i + 1} - Somu Holidays`;
+                return (
+                  <div className={`${styles.galleryImg} ${i === 0 ? styles.galleryFirst : ""}`} key={img + i}>
+                    <a
+                      href={imgUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={imgTitle}
+                      aria-label={`View full resolution image: ${imgTitle}`}
+                    >
+                      <Image
+                        src={imgUrl}
+                        alt={imgAlt}
+                        title={imgTitle}
+                        fill
+                        sizes={i === 0 ? "100vw" : "(min-width: 640px) 33vw, 50vw"}
+                        priority={i === 0}
+                      />
+                    </a>
+                  </div>
+                );
+              })}
             </div>
 
             <div className={styles.wrap}>

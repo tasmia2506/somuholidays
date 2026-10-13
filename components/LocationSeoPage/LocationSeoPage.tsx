@@ -120,6 +120,7 @@ export default function LocationSeoPage({ location }: { location: LocationSeo })
         <section className={`section ${styles.linksSection}`}>
           <div className={`container ${styles.linksRow}`}>
             <span>Explore more:</span>
+            <Link href="/21-seater-bus-rental-bangalore" title="21 Seater Bus Rental Bangalore">21 Seater Bus Rental</Link>
             <Link href="/fleet">Our Fleet</Link>
             <Link href="/services">Services</Link>
             <Link href="/destinations">Destinations</Link>

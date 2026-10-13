@@ -10,7 +10,9 @@ export interface Vehicle {
   qty: number; // vehicles of this type owned
   price: number; // per-km rate in ₹
   bata: number; // driver allowance per day in ₹
-  img: string; // unsplash photo id
+  img: string; // unsplash photo id or path
+  badge?: string;
+  popular?: boolean;
 }
 
 // Real inventory & rates, from the business's rate sheet.
@@ -65,15 +67,17 @@ export const FLEET: Vehicle[] = [
   },
   {
     slug: "bus-21",
-    name: "21 Seater Bus",
+    name: "21 Seater Luxury Bus",
     type: "bus",
-    tag: "Bus",
-    desc: "A luxurious AC bus with spacious storage and pushback seats",
+    tag: "Luxury Coach",
+    desc: "Executive 2x1 pushback seats, dual AC, large luggage boot, and experienced highway chauffeur for Bangalore outstation trips",
     seats: 21,
     qty: 3,
     price: 37,
     bata: 800,
     img: "/21 SEATER.jpeg",
+    badge: "Most Popular for Groups",
+    popular: true,
   },
   {
     slug: "bus-25",

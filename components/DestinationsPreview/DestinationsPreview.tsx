@@ -59,7 +59,8 @@ export default function DestinationsPreview({ limit }: { limit?: number }) {
                   <>
                     <Image
                       src={unsplash(d.heroImg, i === 0 ? 1000 : 900)}
-                      alt={d.name}
+                      alt={`${d.name} holiday tour package and outstation cab destination from Bangalore`}
+                      title={`${d.name} (${d.category}) - Somu Holidays Bangalore`}
                       fill
                       sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                     />

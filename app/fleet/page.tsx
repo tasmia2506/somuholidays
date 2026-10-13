@@ -4,6 +4,7 @@ import SiteFooter from "@/components/SiteFooter/SiteFooter";
 import FloatingActions from "@/components/FloatingActions/FloatingActions";
 import FleetHero from "@/components/FleetHero/FleetHero";
 import FleetSection from "@/components/FleetSection/FleetSection";
+import GroupTravelBanner from "@/components/GroupTravelBanner/GroupTravelBanner";
 import CtaSection from "@/components/CtaSection/CtaSection";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function FleetPage() {
       <main>
         <FleetHero />
         <FleetSection showAll />
+        <GroupTravelBanner />
         <CtaSection />
       </main>
       <SiteFooter />

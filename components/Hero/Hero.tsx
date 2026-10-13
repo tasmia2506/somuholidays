@@ -26,13 +26,15 @@ export default function Hero() {
       <div className={styles.media}>
         <video
           ref={videoRef}
-          src="/landing-page-hero.mp4"
+          poster="/crysta hill.jpg"
+          aria-label="Somu Holidays Luxury Travel and Fleet in Bengaluru"
           autoPlay
           loop
           muted
           playsInline
-          aria-hidden="true"
-        />
+        >
+          <source src="/landing-page-hero.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <div className="container">
@@ -43,8 +45,7 @@ export default function Hero() {
             Our Priority.
           </h1>
           <p>
-            Somu Holidays provides reliable cab and bus transportation services — Innova, Innova Crysta, sedans,
-            and 21 &amp; 25 seater AC buses — for comfortable, chauffeur-driven travel across Bengaluru and beyond.
+            Somu Holidays provides reliable, transparent chauffeur-driven cab and luxury bus rental services across Bengaluru — including Maruti Swift and Toyota Etios sedans from ₹13/km, Toyota Innova Crysta from ₹20/km, and 21 &amp; 25 seater luxury AC buses at ₹37/km for corporate offsites, pilgrimages, and outstation trips.
           </p>
           <div className={styles.actions}>
             <Link href="/contact#book" className="btn btnPrimary">

@@ -10,11 +10,12 @@ import styles from "./SiteHeader.module.css";
 
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
+  { label: "21-Seater Bus", href: "/21-seater-bus-rental-bangalore" },
   { label: "Fleet", href: "/fleet" },
   { label: "Destinations", href: "/destinations" },
   { label: "Services", href: "/services" },
-  { label: "Gallery", href: "/gallery" },
+  { label: "Blog", href: "/blog" },
+  { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -61,6 +62,7 @@ export default function SiteHeader({ alwaysSolid = false }: { alwaysSolid?: bool
   return (
     <>
       <header
+        id="top"
         className={`${styles.header} ${scrolled ? (dark ? styles.scrolled : styles.scrolledLight) : ""}`}
       >
         <div className={`container ${styles.nav}`}>

@@ -43,6 +43,7 @@ export default function SiteFooter() {
               <li><Link href="/fleet">Our Fleet</Link></li>
               <li><Link href="/services">Services</Link></li>
               <li><Link href="/destinations">Destinations</Link></li>
+              <li><Link href="/blog">Blog &amp; Guides</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
@@ -50,12 +51,12 @@ export default function SiteFooter() {
           <div>
             <h4>Core Services</h4>
             <ul className={styles.links}>
+              <li><Link href="/21-seater-bus-rental-bangalore" title="21 Seater Luxury AC Bus Rental in Bangalore">21 Seater Bus Rental (₹37/km)</Link></li>
+              <li><Link href="/taxi-service-bangalore">Bangalore Taxi Service</Link></li>
               <li><Link href="/contact#book">Cab &amp; Airport Transport</Link></li>
               <li><Link href="/destinations">Domestic Tours</Link></li>
-              <li><Link href="/services">Customised Itineraries</Link></li>
               <li><Link href="/services">Corporate &amp; MICE Travel</Link></li>
-              <li><Link href="/services">Theme-Based Tours</Link></li>
-              <li><Link href="/taxi-service-bangalore">Bangalore Taxi Service</Link></li>
+              <li><Link href="/services">Customised Itineraries</Link></li>
             </ul>
           </div>
 
@@ -97,6 +98,8 @@ export default function SiteFooter() {
               <span>© {year} Somu Holidays Tours &amp; Travels. All rights reserved.</span>
               <span className={styles.dot}>·</span>
               <Link href="/privacy">Privacy Policy</Link>
+              <span className={styles.dot}>·</span>
+              <Link href="/terms">Terms of Service</Link>
             </div>
             <div className={styles.bottomRight}>
               <span>Rajajinagar, Bengaluru · Available 24 × 7</span>
