@@ -1,6 +1,7 @@
 "use client";
 
 import { type FormEvent } from "react";
+import Link from "next/link";
 import { waLink } from "@/lib/site";
 import styles from "./ServicesEnquiryBand.module.css";
 
@@ -33,6 +34,27 @@ export default function ServicesEnquiryBand() {
             <input name="name" placeholder="Your name" required />
             <input name="phone" type="tel" placeholder="Phone number" required />
             <input name="comment" placeholder="Comment" />
+          </div>
+          <div className={styles.termsWrap}>
+            <label className={styles.termsLabel}>
+              <input
+                type="checkbox"
+                name="terms"
+                required
+                defaultChecked
+                className={styles.termsCheckbox}
+              />
+              <span>
+                I accept the{" "}
+                <Link href="/terms" target="_blank" className={styles.termsLink}>
+                  Terms &amp; Conditions
+                </Link>{" "}
+                and{" "}
+                <Link href="/privacy" target="_blank" className={styles.termsLink}>
+                  Privacy Policy
+                </Link>
+              </span>
+            </label>
           </div>
           <button className="btn btnPrimary" type="submit">
             Send

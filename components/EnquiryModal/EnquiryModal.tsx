@@ -2,6 +2,7 @@
 
 import { useEffect, useState, type FormEvent, type ReactNode } from "react";
 import { createPortal } from "react-dom";
+import Link from "next/link";
 import Icon from "@/components/Icon";
 import { waLink } from "@/lib/site";
 import styles from "./EnquiryModal.module.css";
@@ -115,6 +116,27 @@ export default function EnquiryModal({
                 <div className={styles.field}>
                   <label htmlFor="eq-phone">Phone Number (optional)</label>
                   <input id="eq-phone" name="phone" type="tel" placeholder="e.g. 98765 43210" />
+                </div>
+                <div className={styles.termsWrap}>
+                  <label className={styles.termsLabel}>
+                    <input
+                      type="checkbox"
+                      name="terms"
+                      required
+                      defaultChecked
+                      className={styles.termsCheckbox}
+                    />
+                    <span>
+                      I accept the{" "}
+                      <Link href="/terms" target="_blank" className={styles.termsLink}>
+                        Terms &amp; Conditions
+                      </Link>{" "}
+                      and{" "}
+                      <Link href="/privacy" target="_blank" className={styles.termsLink}>
+                        Privacy Policy
+                      </Link>
+                    </span>
+                  </label>
                 </div>
                 <button className="btn btnPrimary" type="submit">
                   <Icon name="whatsapp" size={16} />

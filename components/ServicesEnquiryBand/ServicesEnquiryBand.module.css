@@ -19,4 +19,20 @@
 .fields input::placeholder { color: rgba(255, 255, 255, .45); }
 .fields input:focus { border-color: var(--terracotta-500); }
 
+.termsWrap { margin: 0 0 16px; }
+.termsLabel {
+  display: flex; align-items: flex-start; gap: 8px;
+  font-size: .78rem; color: rgba(255, 255, 255, .75); line-height: 1.4;
+  cursor: pointer; user-select: none;
+}
+.termsCheckbox {
+  width: 16px !important; height: 16px !important; margin: 2px 0 0 !important;
+  accent-color: var(--terracotta-500); cursor: pointer; flex: none;
+}
+.termsLink {
+  color: var(--ivory); text-decoration: underline; text-underline-offset: 2px;
+  font-weight: 600; transition: color .15s ease;
+}
+.termsLink:hover { color: var(--terracotta-300); }
+
 .card button { width: 100%; justify-content: center; }

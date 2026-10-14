@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "@/components/Icon";
+import CookieSettingsButton from "@/components/CookieConsent/CookieSettingsButton";
 import { SITE, waLink } from "@/lib/site";
 import styles from "./SiteFooter.module.css";
 
@@ -100,6 +101,8 @@ export default function SiteFooter() {
               <Link href="/privacy">Privacy Policy</Link>
               <span className={styles.dot}>·</span>
               <Link href="/terms">Terms of Service</Link>
+              <span className={styles.dot}>·</span>
+              <CookieSettingsButton className={styles.cookieBtn} />
             </div>
             <div className={styles.bottomRight}>
               <span>Rajajinagar, Bengaluru · Available 24 × 7</span>

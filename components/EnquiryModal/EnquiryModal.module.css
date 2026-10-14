@@ -34,6 +34,22 @@
 }
 .field input:focus, .field select:focus { outline: 2px solid var(--terracotta-500); outline-offset: 1px; }
 
+.termsWrap { margin: 2px 0 4px; }
+.termsLabel {
+  display: flex; align-items: flex-start; gap: 8px;
+  font-size: .78rem; color: var(--forest-700); line-height: 1.4;
+  cursor: pointer; user-select: none;
+}
+.termsCheckbox {
+  width: 16px !important; height: 16px !important; margin: 2px 0 0 !important;
+  accent-color: var(--terracotta-500); cursor: pointer; flex: none;
+}
+.termsLink {
+  color: var(--forest-950); text-decoration: underline; text-underline-offset: 2px;
+  font-weight: 600; transition: color .15s ease;
+}
+.termsLink:hover { color: var(--terracotta-600); }
+
 .panel button[type="submit"] { justify-content: center; margin-top: 4px; }
 
 @media (max-width: 480px) { .row { grid-template-columns: 1fr; } }

@@ -5,17 +5,36 @@ import Link from "next/link";
 import { getCookie, setCookie } from "@/lib/cookies";
 import styles from "./CookieConsent.module.css";
 
-const COOKIE_NAME = "somu_cookie_consent";
+// Bump to v2 so returning users who dismissed previously see the prompt again
+const COOKIE_NAME = "somu_cookie_consent_v2";
 
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
   const bannerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Must stay false on the server and only flip after mount, or the banner's
-    // SSR markup won't match a client that already has the consent cookie.
+    // Check if query param requests reset (?cookies=1 or ?cookie-settings=1)
+    if (typeof window !== "undefined") {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has("cookies") || urlParams.has("cookie-settings")) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setVisible(true);
+        return;
+      }
+    }
+
+    // Must stay false on server and only flip after mount
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    if (!getCookie(COOKIE_NAME)) setVisible(true);
+    if (!getCookie(COOKIE_NAME)) {
+      setVisible(true);
+    }
+  }, []);
+
+  // Listen for global open event from footer or settings buttons
+  useEffect(() => {
+    const handleOpen = () => setVisible(true);
+    window.addEventListener("somu:open-cookie-consent", handleOpen);
+    return () => window.removeEventListener("somu:open-cookie-consent", handleOpen);
   }, []);
 
   useEffect(() => {
@@ -43,16 +62,19 @@ export default function CookieConsent() {
   return (
     <div ref={bannerRef} className={styles.banner} role="dialog" aria-live="polite" aria-label="Cookie consent">
       <div className={styles.inner}>
-        <p>
-          We use cookies to remember your preferences and understand how our site is used. See our{" "}
-          <Link href="/privacy">Privacy Policy</Link> for details.
-        </p>
+        <div className={styles.textWrap}>
+          <span className={styles.cookieBadge}>🍪 Cookies &amp; Privacy</span>
+          <p>
+            We use cookies to enhance your browsing experience, remember route and fleet preferences, and ensure secure booking.
+            Read our <Link href="/privacy">Privacy Policy</Link> for details.
+          </p>
+        </div>
         <div className={styles.actions}>
           <button type="button" className={`btn ${styles.reject}`} onClick={() => handleChoice("rejected")}>
-            Reject
+            Reject Non-Essential
           </button>
           <button type="button" className="btn btnPrimary" onClick={() => handleChoice("accepted")}>
-            Accept
+            Accept All
           </button>
         </div>
       </div>

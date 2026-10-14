@@ -1,6 +1,7 @@
 "use client";
 
 import { type FormEvent } from "react";
+import Link from "next/link";
 import Icon from "@/components/Icon";
 import Reveal from "@/components/Reveal";
 import { SITE, waLink } from "@/lib/site";
@@ -64,6 +65,27 @@ export default function ContactForm() {
               </div>
               <input name="subject" placeholder="Subject" aria-label="Subject" />
               <textarea name="message" placeholder="Message" aria-label="Your Message" rows={5} required />
+              <div className={styles.termsWrap}>
+                <label className={styles.termsLabel}>
+                  <input
+                    type="checkbox"
+                    name="terms"
+                    required
+                    defaultChecked
+                    className={styles.termsCheckbox}
+                  />
+                  <span>
+                    I agree to the{" "}
+                    <Link href="/terms" target="_blank" className={styles.termsLink}>
+                      Terms &amp; Conditions
+                    </Link>{" "}
+                    and{" "}
+                    <Link href="/privacy" target="_blank" className={styles.termsLink}>
+                      Privacy Policy
+                    </Link>
+                  </span>
+                </label>
+              </div>
               <button className="btn btnPrimary" type="submit">
                 Send Now <Icon name="arrow" size={16} />
               </button>

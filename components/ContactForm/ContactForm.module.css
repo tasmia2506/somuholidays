@@ -27,6 +27,23 @@
 }
 .formCard input::placeholder, .formCard textarea::placeholder { color: rgba(255, 255, 255, .45); }
 .formCard input:focus, .formCard textarea:focus { border-color: var(--terracotta-500); background: rgba(255, 255, 255, .1); }
+
+.termsWrap { margin: 6px 0 8px; }
+.termsLabel {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: .8125rem; color: rgba(255, 255, 255, .82); line-height: 1.45;
+  cursor: pointer; user-select: none;
+}
+.termsCheckbox {
+  width: 17px !important; height: 17px !important; margin: 2px 0 0 !important;
+  accent-color: var(--terracotta-500); cursor: pointer; flex: none;
+}
+.termsLink {
+  color: var(--ivory); text-decoration: underline; text-underline-offset: 2px;
+  font-weight: 600; transition: color .15s ease;
+}
+.termsLink:hover { color: var(--terracotta-300); }
+
 .formCard button { margin-top: 4px; width: 100%; justify-content: center; }
 
 .info {

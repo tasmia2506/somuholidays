@@ -41,9 +41,20 @@
     "/bangalore-to-dharmasthala-cab",
     "/blog/21-seater-bus-rental-bangalore-guide",
     "/blog/top-weekend-getaways-from-bangalore-by-cab",
-    "/blog/innova-crysta-vs-bus-rental-bangalore-comparison"
+    "/blog/innova-crysta-vs-bus-rental-bangalore-comparison",
+    "/blog/bangalore-to-coorg-road-trip-guide-cab-bus",
+    "/blog/bangalore-to-mysore-road-trip-expressway-cab-guide",
+    "/blog/bangalore-to-wayanad-road-trip-guide-cab-package",
+    "/blog/bangalore-to-beach-getaways-gokarna-goa-mangalore-cab-guide",
+    "/blog/long-weekends-2026-bangalore-holiday-calendar-trip-planner"
   ],
   "pageImages": {
+    "/": [
+      {
+        "src": "/bus-banner-luxury.jpg",
+        "alt": "Luxury 21 and 25 Seater AC Tourist Bus Rental in Bangalore - Somu Holidays"
+      }
+    ],
     "/21-seater-bus-rental-bangalore": [
       {
         "src": "/21 SEATER.jpeg",
@@ -96,6 +107,36 @@
       {
         "src": "/crysta hill.jpg",
         "alt": "Weekend Road Trip Outstation Cab Hire from Bangalore"
+      }
+    ],
+    "/blog/bangalore-to-coorg-road-trip-guide-cab-bus": [
+      {
+        "src": "/blog-bangalore-to-coorg.jpg",
+        "alt": "Bangalore to Coorg Road Trip Cab Rental Guide - Somu Holidays"
+      }
+    ],
+    "/blog/bangalore-to-mysore-road-trip-expressway-cab-guide": [
+      {
+        "src": "/blog-bangalore-to-mysore.jpg",
+        "alt": "Bangalore to Mysore Expressway Cab Tour Guide - Somu Holidays"
+      }
+    ],
+    "/blog/bangalore-to-wayanad-road-trip-guide-cab-package": [
+      {
+        "src": "/blog-bangalore-to-wayanad.jpg",
+        "alt": "Bangalore to Wayanad Road Trip Cab Package Guide - Somu Holidays"
+      }
+    ],
+    "/blog/bangalore-to-beach-getaways-gokarna-goa-mangalore-cab-guide": [
+      {
+        "src": "/blog-bangalore-to-beach.jpg",
+        "alt": "Bangalore to Beach Road Trips Gokarna Goa Cab Guide - Somu Holidays"
+      }
+    ],
+    "/blog/long-weekends-2026-bangalore-holiday-calendar-trip-planner": [
+      {
+        "src": "/blog-long-weekend-bangalore.jpg",
+        "alt": "Long Weekends 2026 Road Trips from Bangalore Holiday Planner - Somu Holidays"
       }
     ]
   }

@@ -1,20 +1,166 @@
 .band {
-  position: relative; padding: 56px 0; color: var(--ivory); overflow: hidden;
-  background: url("/21%20SEATER.jpeg") center / cover no-repeat, var(--forest-950);
+  position: relative;
+  padding: 64px 0;
+  color: var(--ivory);
+  overflow: hidden;
+  background: 
+    linear-gradient(90deg, rgba(8, 16, 21, 0.96) 0%, rgba(8, 16, 21, 0.88) 45%, rgba(8, 16, 21, 0.35) 75%, rgba(8, 16, 21, 0.05) 100%),
+    url("/bus-banner-luxury.jpg") right center / cover no-repeat;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-@media (min-width: 640px) {
-  .band { padding: 96px 0; }
-}
-.band::after {
-  content: ""; position: absolute; inset: 0;
-  background: linear-gradient(90deg, rgba(11, 11, 11, .92) 0%, rgba(11, 11, 11, .55) 55%, rgba(11, 11, 11, .3) 100%);
-}
-.content { position: relative; max-width: 560px; }
-.content :global(.lead) { color: rgba(255, 255, 255, .78); }
 
-.points { display: flex; flex-direction: column; gap: 10px; margin: 20px 0 28px; padding: 0; list-style: none; }
-.points li {
-  display: flex; align-items: flex-start; gap: 10px;
-  font-size: .9375rem; color: rgba(255, 255, 255, .88); line-height: 1.4;
+@media (min-width: 900px) {
+  .band {
+    padding: 96px 0;
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+  }
 }
-.points li svg { flex: none; margin-top: 2px; color: var(--terracotta-300); }
+
+.card {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+  background: rgba(10, 20, 26, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 20px;
+  padding: 36px 32px;
+  box-shadow: 0 24px 50px -12px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 640px) {
+  .band {
+    background: 
+      linear-gradient(180deg, rgba(8, 16, 21, 0.96) 0%, rgba(8, 16, 21, 0.88) 100%),
+      url("/bus-banner-luxury.jpg") center / cover no-repeat;
+  }
+  .card {
+    padding: 26px 20px;
+    background: rgba(10, 20, 26, 0.94);
+  }
+}
+
+.eyebrowBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.16);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  margin-bottom: 16px;
+}
+
+.heading {
+  color: #ffffff !important;
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.7);
+}
+
+.lead {
+  color: #e2e8f0 !important;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.specsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 12px;
+  margin-bottom: 22px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+}
+
+@media (max-width: 500px) {
+  .specsRow {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.specItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.specLabel {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.specVal {
+  font-size: 0.9375rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 0 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: #f8fafc;
+  line-height: 1.45;
+}
+
+.iconCircle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.btnRow {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.ghostBtn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff !important;
+}
+
+.ghostBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #ffffff;
+  color: #ffffff !important;
+}

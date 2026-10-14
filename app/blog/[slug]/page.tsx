@@ -10,6 +10,8 @@ import FaqSection from "@/components/FaqSection/FaqSection";
 import CtaSection from "@/components/CtaSection/CtaSection";
 import { getAllBlogSlugs, getBlogPostBySlug, BLOG_POSTS } from "@/lib/blogs";
 import { SITE, waLink } from "@/lib/site";
+import { renderMarkdown } from "@/lib/markdown";
+import LongWeekendPlanner from "@/components/LongWeekendPlanner/LongWeekendPlanner";
 import styles from "./page.module.css";
 
 type PageParams = Promise<{ slug: string }>;
@@ -170,20 +172,29 @@ export default async function BlogPostPage({ params }: { params: PageParams }) {
                 </div>
 
                 {/* Article Content Render */}
-                <div
-                  className={styles.articleBody}
-                  dangerouslySetInnerHTML={{
-                    __html: post.content
-                      .replace(/^### (.*$)/gim, "<h3>$1</h3>")
-                      .replace(/^## (.*$)/gim, "<h2>$1</h2>")
-                      .replace(/\*\*(.*?)\*\*/gim, "<strong>$1</strong>")
-                      .replace(/\n\n/g, "</p><p>")
-                      .replace(/\| (.*) \|/g, (match) => {
-                        // Table line passthrough
-                        return match;
-                      }),
-                  }}
-                />
+                {post.content.includes("<!-- PLANNER_EMBED -->") ? (
+                  (() => {
+                    const [part1, part2] = post.content.split("<!-- PLANNER_EMBED -->");
+                    return (
+                      <>
+                        <div
+                          className={styles.articleBody}
+                          dangerouslySetInnerHTML={{ __html: renderMarkdown(part1) }}
+                        />
+                        <LongWeekendPlanner />
+                        <div
+                          className={styles.articleBody}
+                          dangerouslySetInnerHTML={{ __html: renderMarkdown(part2) }}
+                        />
+                      </>
+                    );
+                  })()
+                ) : (
+                  <div
+                    className={styles.articleBody}
+                    dangerouslySetInnerHTML={{ __html: renderMarkdown(post.content) }}
+                  />
+                )}
 
                 {/* Direct Action Callout */}
                 <div

@@ -1,6 +1,545 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap><loc>https://www.somuholidays.com/sitemap-pages.xml</loc><lastmod>2026-10-13</lastmod></sitemap>
-  <sitemap><loc>https://www.somuholidays.com/sitemap-images.xml</loc><lastmod>2026-10-13</lastmod></sitemap>
-  <sitemap><loc>https://www.somuholidays.com/sitemap-videos.xml</loc><lastmod>2026-10-13</lastmod></sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://www.somuholidays.com/21-seater-bus-rental-bangalore</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/21%20SEATER.jpeg</image:loc>
+      <image:title>21 Seater Luxury AC Bus on rent in Bangalore with pushback seats and luggage boot</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/21%20SEATER.jpeg</image:loc>
+      <image:title>21 Seater Luxury AC Bus Rental in Bangalore with Pushback Seats - Somu Holidays</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/25%20seater%20bus2.jpeg</image:loc>
+      <image:title>25 Seater and 21 Seater Tourist Bus Fleet in Bangalore - Somu Holidays</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/about</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/about%20card.jpeg</image:loc>
+      <image:title>Somu Holidays fleet, Bengaluru</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/21-seater-bus-rental-bangalore-guide</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/21%20SEATER.jpeg</image:loc>
+      <image:title>21 Seater Bus Rental Rates and Specifications Guide Bangalore</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/top-weekend-getaways-from-bangalore-by-cab</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/crysta%20hill.jpg</image:loc>
+      <image:title>Weekend Road Trip Outstation Cab Hire from Bangalore</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/innova-crysta-vs-bus-rental-bangalore-comparison</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/CRYSTA%20OUTSIDE.jpeg</image:loc>
+      <image:title>Toyota Innova Crysta compared to Tourist Bus Rental in Bangalore</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/bangalore-to-coorg-road-trip-guide-cab-bus</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/blog-bangalore-to-coorg.jpg</image:loc>
+      <image:title>Bangalore to Coorg Road Trip Cab Rental Guide - Somu Holidays</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/bangalore-to-mysore-road-trip-expressway-cab-guide</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/blog-bangalore-to-mysore.jpg</image:loc>
+      <image:title>Bangalore to Mysore Expressway Cab Tour Guide - Somu Holidays</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/bangalore-to-wayanad-road-trip-guide-cab-package</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/blog-bangalore-to-wayanad.jpg</image:loc>
+      <image:title>Bangalore to Wayanad Road Trip Cab Package Guide - Somu Holidays</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/bangalore-to-beach-getaways-gokarna-goa-mangalore-cab-guide</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/blog-bangalore-to-beach.jpg</image:loc>
+      <image:title>Bangalore to Beach Road Trips Gokarna Goa Cab Guide - Somu Holidays</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/long-weekends-2026-bangalore-holiday-calendar-trip-planner</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/blog-long-weekend-bangalore.jpg</image:loc>
+      <image:title>Long Weekends 2026 Road Trips from Bangalore Holiday Planner - Somu Holidays</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/contact</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/heritaage%20background%20image.jpeg</image:loc>
+      <image:title>Karnataka heritage site</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/mysuru</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/coorg</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/chikmagalur</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/hampi</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/gokarna</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/goa</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/alleppey</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/madurai</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/kumarakom</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/agra</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/jaipur</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/manali</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/ooty</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/fleet</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/our%20fleet%20card.jpeg</image:loc>
+      <image:title>Somu Holidays fleet, Bengaluru</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/21%20SEATER.jpeg</image:loc>
+      <image:title>21 Seater Bus on Rent Bangalore</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/crysta%20hill.jpg</image:loc>
+      <image:title>Toyota Innova Crysta Cab Rental Bangalore</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/SWIFT.jpeg</image:loc>
+      <image:title>Maruti Swift Sedan Cab Bangalore</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/toyota%20etios.jpeg</image:loc>
+      <image:title>Toyota Etios Taxi Bangalore</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/INNOVA.jpeg</image:loc>
+      <image:title>Toyota Innova 7 Seater SUV Bangalore</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/25%20seater%20bus2.jpeg</image:loc>
+      <image:title>25 Seater Luxury Tourist Bus Bangalore</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/gallery</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <video:video>
+      <video:thumbnail_loc>https://www.somuholidays.com/crysta%20hill.jpg</video:thumbnail_loc>
+      <video:title>Somu Holidays Luxury Travel and Fleet in Bengaluru</video:title>
+      <video:description>Somu Holidays Luxury Travel and Fleet in Bengaluru</video:description>
+      <video:content_loc>https://www.somuholidays.com/landing-page-hero.mp4</video:content_loc>
+      <video:publication_date>2026-10-14</video:publication_date>
+    </video:video>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/CRYSTA%20OUTSIDE.jpeg</image:loc>
+      <image:title>Somu Holidays Innova Crysta and tour fleet in Rajajinagar, Bengaluru</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/bus-banner-luxury.jpg</image:loc>
+      <image:title>Luxury 21 and 25 Seater AC Tourist Bus Rental in Bangalore - Somu Holidays</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/privacy</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/services</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/taxi-service-bangalore</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/terms</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/mysuru</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/coorg</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/chikmagalur</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/hampi</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/gokarna</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/goa</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/alleppey</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/madurai</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/kumarakom</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/agra</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/jaipur</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/manali</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/destinations/ooty</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/bangalore-to-mysore-cab</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/bangalore-to-coorg-cab</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/bangalore-to-hassan-cab</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/bangalore-to-chikkamagaluru-cab</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/bangalore-to-hampi-cab</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/bangalore-to-gokarna-cab</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/bangalore-to-udupi-cab</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/bangalore-to-dharmasthala-cab</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/21-seater-bus-rental-bangalore-guide</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/21%20SEATER.jpeg</image:loc>
+      <image:title>21 Seater Bus Rental Rates and Specifications Guide Bangalore</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/top-weekend-getaways-from-bangalore-by-cab</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/crysta%20hill.jpg</image:loc>
+      <image:title>Weekend Road Trip Outstation Cab Hire from Bangalore</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/innova-crysta-vs-bus-rental-bangalore-comparison</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/CRYSTA%20OUTSIDE.jpeg</image:loc>
+      <image:title>Toyota Innova Crysta compared to Tourist Bus Rental in Bangalore</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/bangalore-to-coorg-road-trip-guide-cab-bus</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/blog-bangalore-to-coorg.jpg</image:loc>
+      <image:title>Bangalore to Coorg Road Trip Cab Rental Guide - Somu Holidays</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/bangalore-to-mysore-road-trip-expressway-cab-guide</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/blog-bangalore-to-mysore.jpg</image:loc>
+      <image:title>Bangalore to Mysore Expressway Cab Tour Guide - Somu Holidays</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/bangalore-to-wayanad-road-trip-guide-cab-package</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/blog-bangalore-to-wayanad.jpg</image:loc>
+      <image:title>Bangalore to Wayanad Road Trip Cab Package Guide - Somu Holidays</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/bangalore-to-beach-getaways-gokarna-goa-mangalore-cab-guide</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/blog-bangalore-to-beach.jpg</image:loc>
+      <image:title>Bangalore to Beach Road Trips Gokarna Goa Cab Guide - Somu Holidays</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.somuholidays.com/blog/long-weekends-2026-bangalore-holiday-calendar-trip-planner</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.somuholidays.com/blog-long-weekend-bangalore.jpg</image:loc>
+      <image:title>Long Weekends 2026 Road Trips from Bangalore Holiday Planner - Somu Holidays</image:title>
+    </image:image>
+  </url>
+</urlset>
